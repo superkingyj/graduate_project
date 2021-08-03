@@ -14,6 +14,6 @@ public class MoveToLoginScene : MonoBehaviour
     {
         yield return new WaitForSeconds(delayTime);
 
-        Application.LoadLevel("01_Login");
+        SceneManager.LoadScene("01_Login");
     }
 }

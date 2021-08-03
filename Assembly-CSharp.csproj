@@ -1,7 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <LangVersion>8.0</LangVersion>
+    <LangVersion>latest</LangVersion>
+    <CscToolPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Tools/RoslynScripts</CscToolPath>
+    <CscToolExe>unity_csc.sh</CscToolExe>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -9,7 +11,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{177E9E35-640F-5D60-95B2-EECDCA459CE1}</ProjectGuid>
+    <ProjectGuid>{47606EA0-7579-1470-B3C1-4A64C96D5C54}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -44,684 +46,708 @@
     <ImplicitlyExpandNETStandardFacades>false</ImplicitlyExpandNETStandardFacades>
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
-  <PropertyGroup>
-    <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
-    <UnityProjectGenerator>Package</UnityProjectGenerator>
-    <UnityProjectGeneratorVersion>2.0.7</UnityProjectGeneratorVersion>
-    <UnityProjectType>Game:1</UnityProjectType>
-    <UnityBuildTarget>iOS:9</UnityBuildTarget>
-    <UnityVersion>2020.3.0f1</UnityVersion>
-  </PropertyGroup>
   <ItemGroup>
-    <Analyzer Include="/Applications/Visual Studio.app/Contents/Resources/lib/monodevelop/AddIns/MonoDevelop.Unity/Analyzers/Microsoft.Unity.Analyzers.dll" />
+     <Compile Include="Assets\Scripts\MoveToARScene.cs" />
+     <Compile Include="Assets\Scripts\MoveToLoginScene.cs" />
+     <Compile Include="Assets\Scripts\RegisterUser.cs" />
+     <Compile Include="Assets\Scripts\ShowImages.cs" />
+     <Compile Include="Assets\Scripts\PickUserImage.cs" />
+     <Compile Include="Assets\Scripts\Test.cs" />
+     <Compile Include="Assets\Scripts\SelectMenu.cs" />
+     <Compile Include="Assets\Scripts\BackToMenu.cs" />
+     <None Include="Assets\Lean\READ ME.txt" />
+     <None Include="Assets\StreamingAssets\Vuforia\ARTattoo_Database.xml" />
+ <Reference Include="UnityEngine">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.AIModule">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ARModule">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.ARModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.AccessibilityModule">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AccessibilityModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.AndroidJNIModule">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AndroidJNIModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.AnimationModule">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AnimationModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.AssetBundleModule">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AssetBundleModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.AudioModule">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AudioModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ClothModule">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.ClothModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.CoreModule">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.CoreModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.CrashReportingModule">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.CrashReportingModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.DSPGraphModule">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.DSPGraphModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.DirectorModule">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.DirectorModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.GIModule">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.GIModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.GameCenterModule">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.GameCenterModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.GridModule">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.GridModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.HotReloadModule">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.HotReloadModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.IMGUIModule">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.IMGUIModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ImageConversionModule">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.ImageConversionModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.InputModule">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.InputModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.InputLegacyModule">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.InputLegacyModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.JSONSerializeModule">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.JSONSerializeModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.LocalizationModule">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.LocalizationModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ParticleSystemModule">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.ParticleSystemModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.PerformanceReportingModule">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.PerformanceReportingModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.PhysicsModule">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.PhysicsModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Physics2DModule">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.Physics2DModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ProfilerModule">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.ProfilerModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ScreenCaptureModule">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.ScreenCaptureModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.SharedInternalsModule">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.SharedInternalsModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.SpriteMaskModule">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.SpriteMaskModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.SpriteShapeModule">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.SpriteShapeModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.StreamingModule">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.StreamingModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.SubstanceModule">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.SubstanceModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.SubsystemsModule">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.SubsystemsModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TLSModule">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.TLSModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TerrainModule">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.TerrainModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TerrainPhysicsModule">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.TerrainPhysicsModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TextCoreModule">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.TextCoreModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TextRenderingModule">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.TextRenderingModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TilemapModule">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.TilemapModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UIModule">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UIModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UIElementsModule">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UIElementsModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UIElementsNativeModule">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UIElementsNativeModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UNETModule">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UNETModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UmbraModule">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UmbraModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityAnalyticsModule">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UnityAnalyticsModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityConnectModule">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UnityConnectModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityCurlModule">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UnityCurlModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityTestProtocolModule">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UnityTestProtocolModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityWebRequestModule">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UnityWebRequestModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityWebRequestAssetBundleModule">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityWebRequestAudioModule">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityWebRequestTextureModule">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityWebRequestWWWModule">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.VFXModule">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.VFXModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.VRModule">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.VRModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.VehiclesModule">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.VehiclesModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.VideoModule">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.VideoModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.WindModule">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.WindModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.XRModule">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.CoreModule">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.CoreModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.GraphViewModule">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.GraphViewModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.PackageManagerUIModule">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.PackageManagerUIModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.SceneTemplateModule">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.SceneTemplateModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.UIElementsModule">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.UIElementsModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.UIElementsSamplesModule">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.UIElementsSamplesModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.UIServiceModule">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.UIServiceModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.UnityConnectModule">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.UnityConnectModule.dll</HintPath>
+ </Reference>
+ <Reference Include="Vuforia.UnityExtensions">
+ <HintPath>/Users/roxyyujin/graduate_project/AR_tatto_simulation/Library/PackageCache/com.ptc.vuforia.engine@2df2f4d646/Vuforia/Plugins/Managed/Runtime/Vuforia.UnityExtensions.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.iOS.Extensions.Common">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll</HintPath>
+ </Reference>
+ <Reference Include="mscorlib">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
+ </Reference>
+ <Reference Include="System">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/System.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Core">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/System.Core.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.Serialization">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/System.Runtime.Serialization.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Xml">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/System.Xml.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Xml.Linq">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/System.Xml.Linq.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Numerics">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/System.Numerics.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Numerics.Vectors">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/System.Numerics.Vectors.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Net.Http">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/System.Net.Http.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.CSharp">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Microsoft.CSharp.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Data">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/System.Data.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.Win32.Primitives">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/Microsoft.Win32.Primitives.dll</HintPath>
+ </Reference>
+ <Reference Include="System.AppContext">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.AppContext.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Collections.Concurrent">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Collections.Concurrent.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Collections.NonGeneric">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Collections.NonGeneric.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Collections.Specialized">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Collections.Specialized.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Collections">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Collections.dll</HintPath>
+ </Reference>
+ <Reference Include="System.ComponentModel.Annotations">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ComponentModel.Annotations.dll</HintPath>
+ </Reference>
+ <Reference Include="System.ComponentModel.EventBasedAsync">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ComponentModel.EventBasedAsync.dll</HintPath>
+ </Reference>
+ <Reference Include="System.ComponentModel.Primitives">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ComponentModel.Primitives.dll</HintPath>
+ </Reference>
+ <Reference Include="System.ComponentModel.TypeConverter">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ComponentModel.TypeConverter.dll</HintPath>
+ </Reference>
+ <Reference Include="System.ComponentModel">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ComponentModel.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Console">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Console.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Data.Common">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Data.Common.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Diagnostics.Contracts">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.Contracts.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Diagnostics.Debug">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.Debug.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Diagnostics.FileVersionInfo">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.FileVersionInfo.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Diagnostics.Process">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.Process.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Diagnostics.StackTrace">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.StackTrace.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Diagnostics.TextWriterTraceListener">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.TextWriterTraceListener.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Diagnostics.Tools">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.Tools.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Diagnostics.TraceSource">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.TraceSource.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Drawing.Primitives">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Drawing.Primitives.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Dynamic.Runtime">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Dynamic.Runtime.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Globalization.Calendars">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Globalization.Calendars.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Globalization.Extensions">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Globalization.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Globalization">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Globalization.dll</HintPath>
+ </Reference>
+ <Reference Include="System.IO.Compression.ZipFile">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.Compression.ZipFile.dll</HintPath>
+ </Reference>
+ <Reference Include="System.IO.FileSystem.DriveInfo">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.FileSystem.DriveInfo.dll</HintPath>
+ </Reference>
+ <Reference Include="System.IO.FileSystem.Primitives">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.FileSystem.Primitives.dll</HintPath>
+ </Reference>
+ <Reference Include="System.IO.FileSystem.Watcher">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.FileSystem.Watcher.dll</HintPath>
+ </Reference>
+ <Reference Include="System.IO.FileSystem">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.FileSystem.dll</HintPath>
+ </Reference>
+ <Reference Include="System.IO.IsolatedStorage">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.IsolatedStorage.dll</HintPath>
+ </Reference>
+ <Reference Include="System.IO.MemoryMappedFiles">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.MemoryMappedFiles.dll</HintPath>
+ </Reference>
+ <Reference Include="System.IO.Pipes">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.Pipes.dll</HintPath>
+ </Reference>
+ <Reference Include="System.IO.UnmanagedMemoryStream">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.UnmanagedMemoryStream.dll</HintPath>
+ </Reference>
+ <Reference Include="System.IO">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Linq.Expressions">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Linq.Expressions.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Linq.Parallel">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Linq.Parallel.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Linq.Queryable">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Linq.Queryable.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Linq">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Linq.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Net.Http.Rtc">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Http.Rtc.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Net.NameResolution">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.NameResolution.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Net.NetworkInformation">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.NetworkInformation.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Net.Ping">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Ping.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Net.Primitives">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Primitives.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Net.Requests">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Requests.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Net.Security">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Security.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Net.Sockets">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Sockets.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Net.WebHeaderCollection">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.WebHeaderCollection.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Net.WebSockets.Client">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.WebSockets.Client.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Net.WebSockets">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.WebSockets.dll</HintPath>
+ </Reference>
+ <Reference Include="System.ObjectModel">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ObjectModel.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Reflection.Emit.ILGeneration">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.Emit.ILGeneration.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Reflection.Emit.Lightweight">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.Emit.Lightweight.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Reflection.Emit">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.Emit.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Reflection.Extensions">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Reflection.Primitives">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.Primitives.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Reflection">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Resources.Reader">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Resources.Reader.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Resources.ResourceManager">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Resources.ResourceManager.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Resources.Writer">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Resources.Writer.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.CompilerServices.VisualC">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.CompilerServices.VisualC.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.Extensions">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.Handles">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Handles.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.InteropServices.RuntimeInformation">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.InteropServices.WindowsRuntime">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.InteropServices.WindowsRuntime.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.InteropServices">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.InteropServices.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.Numerics">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Numerics.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.Serialization.Formatters">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Serialization.Formatters.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.Serialization.Json">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Serialization.Json.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.Serialization.Primitives">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Serialization.Primitives.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.Serialization.Xml">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Serialization.Xml.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Security.Claims">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Claims.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Security.Cryptography.Algorithms">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Cryptography.Algorithms.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Security.Cryptography.Csp">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Cryptography.Csp.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Security.Cryptography.Encoding">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Cryptography.Encoding.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Security.Cryptography.Primitives">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Cryptography.Primitives.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Security.Cryptography.X509Certificates">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Cryptography.X509Certificates.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Security.Principal">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Principal.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Security.SecureString">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.SecureString.dll</HintPath>
+ </Reference>
+ <Reference Include="System.ServiceModel.Duplex">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ServiceModel.Duplex.dll</HintPath>
+ </Reference>
+ <Reference Include="System.ServiceModel.Http">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ServiceModel.Http.dll</HintPath>
+ </Reference>
+ <Reference Include="System.ServiceModel.NetTcp">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ServiceModel.NetTcp.dll</HintPath>
+ </Reference>
+ <Reference Include="System.ServiceModel.Primitives">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ServiceModel.Primitives.dll</HintPath>
+ </Reference>
+ <Reference Include="System.ServiceModel.Security">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ServiceModel.Security.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Text.Encoding.Extensions">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Text.Encoding.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Text.Encoding">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Text.Encoding.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Text.RegularExpressions">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Text.RegularExpressions.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Threading.Overlapped">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.Overlapped.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Threading.Tasks.Parallel">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.Tasks.Parallel.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Threading.Tasks">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.Tasks.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Threading.Thread">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.Thread.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Threading.ThreadPool">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.ThreadPool.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Threading.Timer">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.Timer.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Threading">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.dll</HintPath>
+ </Reference>
+ <Reference Include="System.ValueTuple">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ValueTuple.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Xml.ReaderWriter">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.ReaderWriter.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Xml.XDocument">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XDocument.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Xml.XPath.XDocument">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XPath.XDocument.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Xml.XPath">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XPath.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Xml.XmlDocument">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XmlDocument.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Xml.XmlSerializer">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XmlSerializer.dll</HintPath>
+ </Reference>
+ <Reference Include="netstandard">
+ <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/netstandard.dll</HintPath>
+ </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets/Scripts/MoveToLoginScene.cs" />
-    <Compile Include="Assets/Scripts/RegisterUser.cs" />
-    <Compile Include="Assets/Scripts/ShowImages.cs" />
-    <Compile Include="Assets/Scripts/SelectMenu.cs" />
-    <Compile Include="Assets/Scripts/BackToMenu.cs" />
-    <Compile Include="Assets/Scripts/MoveToARScene.cs" />
-  </ItemGroup>
-  <ItemGroup>
-     <None Include="Assets/Lean/READ ME.txt" />
-     <None Include="Assets/StreamingAssets/Vuforia/ARTattoo_Database.xml" />
-    <Reference Include="UnityEngine">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.AIModule">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.ARModule">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.ARModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.AccessibilityModule">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AccessibilityModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.AndroidJNIModule">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AndroidJNIModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.AnimationModule">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AnimationModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.AssetBundleModule">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AssetBundleModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.AudioModule">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AudioModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.ClothModule">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.ClothModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.CoreModule">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.CoreModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.CrashReportingModule">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.CrashReportingModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.DSPGraphModule">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.DSPGraphModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.DirectorModule">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.DirectorModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.GIModule">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.GIModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.GameCenterModule">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.GameCenterModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.GridModule">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.GridModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.HotReloadModule">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.HotReloadModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.IMGUIModule">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.IMGUIModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.ImageConversionModule">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.ImageConversionModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.InputModule">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.InputModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.InputLegacyModule">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.InputLegacyModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.JSONSerializeModule">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.JSONSerializeModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.LocalizationModule">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.LocalizationModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.ParticleSystemModule">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.ParticleSystemModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.PerformanceReportingModule">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.PerformanceReportingModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.PhysicsModule">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.PhysicsModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.Physics2DModule">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.Physics2DModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.ProfilerModule">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.ProfilerModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.ScreenCaptureModule">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.ScreenCaptureModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.SharedInternalsModule">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.SharedInternalsModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.SpriteMaskModule">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.SpriteMaskModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.SpriteShapeModule">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.SpriteShapeModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.StreamingModule">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.StreamingModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.SubstanceModule">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.SubstanceModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.SubsystemsModule">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.SubsystemsModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.TLSModule">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.TLSModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.TerrainModule">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.TerrainModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.TerrainPhysicsModule">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.TerrainPhysicsModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.TextCoreModule">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.TextCoreModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.TextRenderingModule">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.TextRenderingModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.TilemapModule">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.TilemapModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.UIModule">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UIModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.UIElementsModule">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UIElementsModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.UIElementsNativeModule">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UIElementsNativeModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.UNETModule">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UNETModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.UmbraModule">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UmbraModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.UnityAnalyticsModule">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UnityAnalyticsModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.UnityConnectModule">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UnityConnectModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.UnityCurlModule">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UnityCurlModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.UnityTestProtocolModule">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UnityTestProtocolModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.UnityWebRequestModule">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UnityWebRequestModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.UnityWebRequestAssetBundleModule">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.UnityWebRequestAudioModule">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.UnityWebRequestTextureModule">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.UnityWebRequestWWWModule">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.VFXModule">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.VFXModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.VRModule">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.VRModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.VehiclesModule">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.VehiclesModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.VideoModule">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.VideoModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.WindModule">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.WindModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.XRModule">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.CoreModule">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.CoreModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.GraphViewModule">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.GraphViewModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.PackageManagerUIModule">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.PackageManagerUIModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.SceneTemplateModule">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.SceneTemplateModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.UIElementsModule">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.UIElementsModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.UIElementsSamplesModule">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.UIElementsSamplesModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.UIServiceModule">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.UIServiceModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.UnityConnectModule">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.UnityConnectModule.dll</HintPath>
-    </Reference>
-    <Reference Include="Vuforia.UnityExtensions">
-      <HintPath>Library/PackageCache/com.ptc.vuforia.engine@2df2f4d646/Vuforia/Plugins/Managed/Runtime/Vuforia.UnityExtensions.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.iOS.Extensions.Common">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll</HintPath>
-    </Reference>
-    <Reference Include="mscorlib">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
-    </Reference>
-    <Reference Include="System">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/System.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Core">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/System.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Runtime.Serialization">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/System.Runtime.Serialization.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Xml">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/System.Xml.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Xml.Linq">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/System.Xml.Linq.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Numerics">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/System.Numerics.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Numerics.Vectors">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/System.Numerics.Vectors.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Net.Http">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/System.Net.Http.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.CSharp">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Microsoft.CSharp.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Data">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/System.Data.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Win32.Primitives">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/Microsoft.Win32.Primitives.dll</HintPath>
-    </Reference>
-    <Reference Include="System.AppContext">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.AppContext.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Collections.Concurrent">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Collections.Concurrent.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Collections.NonGeneric">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Collections.NonGeneric.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Collections.Specialized">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Collections.Specialized.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Collections">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Collections.dll</HintPath>
-    </Reference>
-    <Reference Include="System.ComponentModel.Annotations">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ComponentModel.Annotations.dll</HintPath>
-    </Reference>
-    <Reference Include="System.ComponentModel.EventBasedAsync">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ComponentModel.EventBasedAsync.dll</HintPath>
-    </Reference>
-    <Reference Include="System.ComponentModel.Primitives">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ComponentModel.Primitives.dll</HintPath>
-    </Reference>
-    <Reference Include="System.ComponentModel.TypeConverter">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ComponentModel.TypeConverter.dll</HintPath>
-    </Reference>
-    <Reference Include="System.ComponentModel">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ComponentModel.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Console">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Console.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Data.Common">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Data.Common.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Diagnostics.Contracts">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.Contracts.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Diagnostics.Debug">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.Debug.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Diagnostics.FileVersionInfo">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.FileVersionInfo.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Diagnostics.Process">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.Process.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Diagnostics.StackTrace">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.StackTrace.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Diagnostics.TextWriterTraceListener">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.TextWriterTraceListener.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Diagnostics.Tools">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.Tools.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Diagnostics.TraceSource">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.TraceSource.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Drawing.Primitives">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Drawing.Primitives.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Dynamic.Runtime">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Dynamic.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Globalization.Calendars">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Globalization.Calendars.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Globalization.Extensions">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Globalization.Extensions.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Globalization">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Globalization.dll</HintPath>
-    </Reference>
-    <Reference Include="System.IO.Compression.ZipFile">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.Compression.ZipFile.dll</HintPath>
-    </Reference>
-    <Reference Include="System.IO.FileSystem.DriveInfo">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.FileSystem.DriveInfo.dll</HintPath>
-    </Reference>
-    <Reference Include="System.IO.FileSystem.Primitives">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.FileSystem.Primitives.dll</HintPath>
-    </Reference>
-    <Reference Include="System.IO.FileSystem.Watcher">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.FileSystem.Watcher.dll</HintPath>
-    </Reference>
-    <Reference Include="System.IO.FileSystem">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.FileSystem.dll</HintPath>
-    </Reference>
-    <Reference Include="System.IO.IsolatedStorage">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.IsolatedStorage.dll</HintPath>
-    </Reference>
-    <Reference Include="System.IO.MemoryMappedFiles">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.MemoryMappedFiles.dll</HintPath>
-    </Reference>
-    <Reference Include="System.IO.Pipes">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.Pipes.dll</HintPath>
-    </Reference>
-    <Reference Include="System.IO.UnmanagedMemoryStream">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.UnmanagedMemoryStream.dll</HintPath>
-    </Reference>
-    <Reference Include="System.IO">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Linq.Expressions">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Linq.Expressions.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Linq.Parallel">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Linq.Parallel.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Linq.Queryable">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Linq.Queryable.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Linq">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Linq.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Net.Http.Rtc">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Http.Rtc.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Net.NameResolution">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.NameResolution.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Net.NetworkInformation">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.NetworkInformation.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Net.Ping">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Ping.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Net.Primitives">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Primitives.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Net.Requests">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Requests.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Net.Security">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Security.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Net.Sockets">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Sockets.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Net.WebHeaderCollection">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.WebHeaderCollection.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Net.WebSockets.Client">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.WebSockets.Client.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Net.WebSockets">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.WebSockets.dll</HintPath>
-    </Reference>
-    <Reference Include="System.ObjectModel">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ObjectModel.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Reflection.Emit.ILGeneration">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.Emit.ILGeneration.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Reflection.Emit.Lightweight">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.Emit.Lightweight.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Reflection.Emit">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.Emit.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Reflection.Extensions">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.Extensions.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Reflection.Primitives">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.Primitives.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Reflection">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Resources.Reader">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Resources.Reader.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Resources.ResourceManager">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Resources.ResourceManager.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Resources.Writer">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Resources.Writer.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Runtime.CompilerServices.VisualC">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.CompilerServices.VisualC.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Runtime.Extensions">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Extensions.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Runtime.Handles">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Handles.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Runtime.InteropServices.RuntimeInformation">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Runtime.InteropServices.WindowsRuntime">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.InteropServices.WindowsRuntime.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Runtime.InteropServices">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.InteropServices.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Runtime.Numerics">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Numerics.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Runtime.Serialization.Formatters">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Serialization.Formatters.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Runtime.Serialization.Json">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Serialization.Json.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Runtime.Serialization.Primitives">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Serialization.Primitives.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Runtime.Serialization.Xml">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Serialization.Xml.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Runtime">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Security.Claims">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Claims.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Security.Cryptography.Algorithms">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Cryptography.Algorithms.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Security.Cryptography.Csp">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Cryptography.Csp.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Security.Cryptography.Encoding">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Cryptography.Encoding.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Security.Cryptography.Primitives">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Cryptography.Primitives.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Security.Cryptography.X509Certificates">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Cryptography.X509Certificates.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Security.Principal">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Principal.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Security.SecureString">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.SecureString.dll</HintPath>
-    </Reference>
-    <Reference Include="System.ServiceModel.Duplex">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ServiceModel.Duplex.dll</HintPath>
-    </Reference>
-    <Reference Include="System.ServiceModel.Http">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ServiceModel.Http.dll</HintPath>
-    </Reference>
-    <Reference Include="System.ServiceModel.NetTcp">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ServiceModel.NetTcp.dll</HintPath>
-    </Reference>
-    <Reference Include="System.ServiceModel.Primitives">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ServiceModel.Primitives.dll</HintPath>
-    </Reference>
-    <Reference Include="System.ServiceModel.Security">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ServiceModel.Security.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Text.Encoding.Extensions">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Text.Encoding.Extensions.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Text.Encoding">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Text.Encoding.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Text.RegularExpressions">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Text.RegularExpressions.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Threading.Overlapped">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.Overlapped.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Threading.Tasks.Parallel">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.Tasks.Parallel.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Threading.Tasks">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.Tasks.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Threading.Thread">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.Thread.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Threading.ThreadPool">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.ThreadPool.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Threading.Timer">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.Timer.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Threading">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.dll</HintPath>
-    </Reference>
-    <Reference Include="System.ValueTuple">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ValueTuple.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Xml.ReaderWriter">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.ReaderWriter.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Xml.XDocument">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XDocument.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Xml.XPath.XDocument">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XPath.XDocument.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Xml.XPath">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XPath.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Xml.XmlDocument">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XmlDocument.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Xml.XmlSerializer">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XmlSerializer.dll</HintPath>
-    </Reference>
-    <Reference Include="netstandard">
-      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/netstandard.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{CC4D6F96-571A-A0BC-9FB3-804537254273}</Project>
+      <Name>Assembly-CSharp-firstpass</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
     <ProjectReference Include="Unity.VSCode.Editor.csproj">
-      <Project>{EB2FAF44-916B-47C5-7B19-9C903CD45235}</Project>
+      <Project>{AED87257-C5E6-929F-8A16-318624CDB73A}</Project>
       <Name>Unity.VSCode.Editor</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="LeanTouch.csproj">
-      <Project>{9B416424-F210-0182-D90F-5ACD5148B079}</Project>
+      <Project>{EE0ACB51-0C32-EBCA-0756-1043FEBCEE62}</Project>
       <Name>LeanTouch</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.XR.LegacyInputHelpers.csproj">
-      <Project>{8D2F7197-6202-FD42-2C90-796F25FF1722}</Project>
+      <Project>{50EC5E29-9BDA-3E64-30A7-62E3DE123DDB}</Project>
       <Name>UnityEngine.XR.LegacyInputHelpers</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="NativeGallery.Editor.csproj">
+      <Project>{598E26D6-C42D-BA9F-D95E-744DB61F63A2}</Project>
+      <Name>NativeGallery.Editor</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="Unity.TextMeshPro.Editor.csproj">
-      <Project>{2A732B51-8569-F4DA-558D-4C6A66EC2324}</Project>
+      <Project>{8BB7AF27-27AD-607E-2262-BB584133156C}</Project>
       <Name>Unity.TextMeshPro.Editor</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="Unity.VisualStudio.Editor.csproj">
-      <Project>{D8C1BBA9-9FBC-67EB-02D4-181A96B26534}</Project>
+      <Project>{FAFA7FE4-7C5C-37EA-B182-497012C4F20D}</Project>
       <Name>Unity.VisualStudio.Editor</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="VuforiaEditorScripts.csproj">
-      <Project>{1AC5F123-AD10-7112-8ED1-D405EA256174}</Project>
+      <Project>{C5B37251-9ED9-952A-8947-91EE0D35C750}</Project>
       <Name>VuforiaEditorScripts</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="Unity.XR.Management.Editor.csproj">
-      <Project>{A3113D0B-6F58-174B-0ACF-0355EC407493}</Project>
+      <Project>{F64C53DB-FE38-81A0-FE7B-201688849147}</Project>
       <Name>Unity.XR.Management.Editor</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="Unity.Timeline.Editor.csproj">
-      <Project>{690E634D-B7B2-CE34-8FC2-04434A0B8DAB}</Project>
+      <Project>{F49F180E-16D3-EAF7-FD80-A72E0253D709}</Project>
       <Name>Unity.Timeline.Editor</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="Unity.Timeline.csproj">
-      <Project>{5A04991D-5944-614E-CDDD-22856B8D389D}</Project>
+      <Project>{4BC5D974-F15B-8813-4712-B200DB4CE358}</Project>
       <Name>Unity.Timeline</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="Unity.TextMeshPro.csproj">
-      <Project>{47182B0F-50E6-7931-4870-215F52570D0C}</Project>
+      <Project>{26465EE5-4EC4-C81F-C2A3-61DADFAB0BD6}</Project>
       <Name>Unity.TextMeshPro</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="UnityEditor.XR.LegacyInputHelpers.csproj">
-      <Project>{1D9C8EB1-90E1-EF93-7213-EA3A0ABFBB10}</Project>
+      <Project>{8C7D8A66-7810-D154-1F24-ECFA6561533E}</Project>
       <Name>UnityEditor.XR.LegacyInputHelpers</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="Unity.XR.Management.csproj">
-      <Project>{69CA9F85-D452-B58F-6C0C-351318825BEC}</Project>
+      <Project>{50042142-EF92-139A-1575-3C0F073E03C3}</Project>
       <Name>Unity.XR.Management</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="NativeGallery.Runtime.csproj">
+      <Project>{4A8A6CC4-962F-9C75-E7F3-2D512BF6F73A}</Project>
+      <Name>NativeGallery.Runtime</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="LeanCommon.csproj">
-      <Project>{E3614939-5D58-9BEB-EE74-E32B686121B2}</Project>
+      <Project>{CB57D0F1-2208-BE3C-939A-0708DF46746D}</Project>
       <Name>LeanCommon</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="Unity.Subsystem.Registration.csproj">
-      <Project>{51CDE535-7B44-1087-DFF8-F55849864AE7}</Project>
+      <Project>{D8076AF4-BE80-CE50-602C-E6B4CA3D7764}</Project>
       <Name>Unity.Subsystem.Registration</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="EditorMigrationScripts.csproj">
-      <Project>{A95888BE-EB1E-32EE-A449-BFBD41F497E6}</Project>
+      <Project>{001447E9-A5E8-B225-6D5B-E56ED5A6C321}</Project>
       <Name>EditorMigrationScripts</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="UnityEditor.UI.csproj">
-      <Project>{5AAA5AAB-4761-B148-819E-58E0C7070ED4}</Project>
+      <Project>{53374EF6-65D8-CF20-479E-22346DCBE200}</Project>
       <Name>UnityEditor.UI</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="UnityEditor.SpatialTracking.csproj">
-      <Project>{2BD8CCC5-9044-FD4D-5FD8-64897A38B589}</Project>
+      <Project>{FBDC0665-EEFE-3940-93A9-BFD61EF6F863}</Project>
       <Name>UnityEditor.SpatialTracking</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="Unity.Rider.Editor.csproj">
-      <Project>{1ABFFECD-6A85-F9E7-5682-719C7FC871E3}</Project>
+      <Project>{107449CA-1AD9-FD41-5F55-AAAA6F1EF2DB}</Project>
       <Name>Unity.Rider.Editor</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.UI.csproj">
-      <Project>{BD8C8ECA-61EC-B4F0-50FB-846D31DB8CD0}</Project>
+      <Project>{0898274C-9C99-648F-BA3F-203C00B1C40D}</Project>
       <Name>UnityEngine.UI</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.SpatialTracking.csproj">
-      <Project>{57D49EAD-C54F-7071-D5A8-DA1F42FFDBE8}</Project>
+      <Project>{B17491CC-5A44-0643-F961-212CBFADF2B0}</Project>
       <Name>UnityEngine.SpatialTracking</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="VuforiaScripts.csproj">
-      <Project>{6B04817A-A9AC-39D8-253E-E1F97243B905}</Project>
+      <Project>{B4B4DAA4-5821-0804-587F-401261A3FDBF}</Project>
       <Name>VuforiaScripts</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <Target Name="GenerateTargetFrameworkMonikerAttribute" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
