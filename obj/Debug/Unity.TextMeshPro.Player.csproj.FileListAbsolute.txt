@@ -1,0 +1,2 @@
+/Users/roxyyujin/graduate_project/AR_tatto_simulation/obj/Debug/Unity.TextMeshPro.Player.csprojAssemblyReference.cache
+/Users/roxyyujin/graduate_project/AR_tatto_simulation/obj/Debug/Unity.TextMeshPro.Player.csproj.CoreCompileInputs.cache

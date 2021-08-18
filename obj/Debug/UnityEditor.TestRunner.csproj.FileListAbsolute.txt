@@ -1,0 +1,2 @@
+/Users/roxyyujin/graduate_project/AR_tatto_simulation/obj/Debug/UnityEditor.TestRunner.csprojAssemblyReference.cache
+/Users/roxyyujin/graduate_project/AR_tatto_simulation/obj/Debug/UnityEditor.TestRunner.csproj.CoreCompileInputs.cache

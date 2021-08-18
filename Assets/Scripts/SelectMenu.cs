@@ -5,8 +5,9 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using System.IO;
 
-public class SelectMenu : MonoBehaviour
+internal class SelectMenu : MonoBehaviour
 {
+    [SerializeField]
     public Button pickImage, uploadImage, gallary, community;
 
     // Start is called before the first frame update
@@ -28,13 +29,14 @@ public class SelectMenu : MonoBehaviour
 
     public void uploadImageClick()
     {
-        //SceneManager.LoadScene("04_UploadImage");
-        // 네이티브 갤러리에서 사용자 사진 불러오기
         var pickImage = new PickUserImage();
-        Texture2D userImage = pickImage.PickImage(512);
-        //Debug.Log(userImage);
-        //Debug.Log("네이티브 갤러리에서 사용자 사진 불러오기 성공");
+        string pickedImageName = pickImage.PickImage(512);
+        Debug.Log("저장된 이미지 이름 : " + pickedImageName);
+
+        // save selected Image Name in to the scene object <ImageName> 
+        GameObject.Find("ImageName").GetComponent<ImageName>().setpickedImageName(pickedImageName);
         SceneManager.LoadScene("07_AR");
+        DontDestroyOnLoad(GameObject.Find("ImageName"));
     }
 
     public void gallaryClick()
