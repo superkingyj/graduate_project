@@ -294,7 +294,7 @@ GameObject:
   - component: {fileID: 204219123}
   - component: {fileID: 204219122}
   m_Layer: 5
-  m_Name: Gallary
+  m_Name: Gallery
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -366,7 +366,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1359457122}
         m_TargetAssemblyTypeName: SelectMenu, Assembly-CSharp
-        m_MethodName: gallaryClick
+        m_MethodName: galleryClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -984,7 +984,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pickImage: {fileID: 1870994928}
   uploadImage: {fileID: 687317542}
-  gallary: {fileID: 204219122}
+  gallery: {fileID: 0}
   community: {fileID: 331546620}
 --- !u!1 &1504505506
 GameObject:

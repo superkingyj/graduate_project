@@ -20,8 +20,8 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/04_UploadImage.unity
     guid: af4129ae396ae4f24bacb1687a5359e4
-  - enabled: 0
-    path: Assets/Scenes/05_Gallary.unity
+  - enabled: 1
+    path: Assets/Scenes/05_Gallery.unity
     guid: 647654ce4751c476e9a42edf627ddf73
   - enabled: 0
     path: Assets/Scenes/06_Community.unity

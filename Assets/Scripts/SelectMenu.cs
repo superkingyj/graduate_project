@@ -8,7 +8,7 @@ using System.IO;
 internal class SelectMenu : MonoBehaviour
 {
     [SerializeField]
-    public Button pickImage, uploadImage, gallary, community;
+    public Button pickImage, uploadImage, gallery, community;
 
     // Start is called before the first frame update
     void Start()
@@ -39,9 +39,9 @@ internal class SelectMenu : MonoBehaviour
         DontDestroyOnLoad(GameObject.Find("ImageName"));
     }
 
-    public void gallaryClick()
+    public void galleryClick()
     {
-        SceneManager.LoadScene("05_Gallary");
+        SceneManager.LoadScene("05_Gallery");
     }
 
     public void communityClick()
