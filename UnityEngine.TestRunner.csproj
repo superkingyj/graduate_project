@@ -146,10 +146,10 @@
     <Compile Include="Library/PackageCache/com.unity.test-framework@1.1.22/UnityEngine.TestRunner/Assertions/ConstraintsExtensions.cs" />
     <Compile Include="Library/PackageCache/com.unity.test-framework@1.1.22/UnityEngine.TestRunner/NUnitExtensions/Attributes/UnityTestAttribute.cs" />
     <Compile Include="Library/PackageCache/com.unity.test-framework@1.1.22/UnityEngine.TestRunner/Utils/AssemblyProvider/ScriptingRuntimeProxy.cs" />
+    <Compile Include="Library/PackageCache/com.unity.test-framework@1.1.22/UnityEngine.TestRunner/TestRunner/Callbacks/TestResultRendererCallback.cs" />
     <Compile Include="Library/PackageCache/com.unity.test-framework@1.1.22/UnityEngine.TestRunner/TestRunner/RemoteHelpers/PlayerConnectionMessageIds.cs" />
     <Compile Include="Library/PackageCache/com.unity.test-framework@1.1.22/UnityEngine.TestRunner/Utils/Vector2EqualityComparer.cs" />
     <Compile Include="Library/PackageCache/com.unity.test-framework@1.1.22/UnityEngine.TestRunner/Utils/Utils.cs" />
-    <Compile Include="Library/PackageCache/com.unity.test-framework@1.1.22/UnityEngine.TestRunner/TestRunner/Callbacks/TestResultRendererCallback.cs" />
     <Compile Include="Library/PackageCache/com.unity.test-framework@1.1.22/UnityEngine.TestRunner/AssemblyInfo.cs" />
     <Compile Include="Library/PackageCache/com.unity.test-framework@1.1.22/UnityEngine.TestRunner/NUnitExtensions/Attributes/TestMustExpectAllLogsAttribute.cs" />
     <Compile Include="Library/PackageCache/com.unity.test-framework@1.1.22/UnityEngine.TestRunner/Assertions/LogScope/LogEvent.cs" />

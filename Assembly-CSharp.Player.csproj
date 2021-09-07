@@ -62,13 +62,15 @@
     <Compile Include="Assets/Scripts/RegisterUser.cs" />
     <Compile Include="Assets/Scripts/ShowImages.cs" />
     <Compile Include="Assets/Scripts/PickUserImage.cs" />
+    <Compile Include="Assets/Scripts/ShowBigImage.cs" />
+    <Compile Include="Assets/Scripts/ScreenRecorder.cs" />
     <Compile Include="Assets/Scripts/Test.cs" />
     <Compile Include="Assets/Scripts/ImageName.cs" />
     <Compile Include="Assets/Scripts/SelectMenu.cs" />
-    <Compile Include="Assets/Scripts/BackToMenu.cs" />
-    <Compile Include="Assets/Scripts/ScreenRecorder.cs" />
     <Compile Include="Assets/Scripts/GetPickedImage.cs" />
+    <Compile Include="Assets/Scripts/BackToMenu.cs" />
     <Compile Include="Assets/Scripts/LoadUserImages.cs" />
+    <Compile Include="Assets/Scripts/LoadServiceImages.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets/Lean/READ ME.txt" />

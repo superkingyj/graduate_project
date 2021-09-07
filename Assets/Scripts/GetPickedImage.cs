@@ -29,7 +29,7 @@ public class GetPickedImage : MonoBehaviour
     {
         // 사용자가 선택한 이미지 불러오기
         // 테스트용 이미지 불러온것... 후에 밑에 주석 해제
-        string filePath = Application.persistentDataPath + "/UserImages/" + "1628835330.png";
+        string filePath = Application.persistentDataPath + "/UserImages/" + "1629271309.png";
         //string filePath = Application.persistentDataPath + "/UserImages/" + GameObject.Find("ImageName").GetComponent<ImageName>().getPickedImageName();
 
         Debug.Log(filePath);

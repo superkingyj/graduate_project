@@ -23,7 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/05_Gallery.unity
     guid: 647654ce4751c476e9a42edf627ddf73
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/06_Community.unity
     guid: 4faa0b7de59e04081b3e293bb6c22f05
   - enabled: 1

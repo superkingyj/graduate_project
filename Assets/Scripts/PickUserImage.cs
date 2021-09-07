@@ -47,16 +47,12 @@ public class PickUserImage : MonoBehaviour
             Debug.Log("이미지 저장 작업 시작");
             byte[] bytes = readableTextur2D.EncodeToPNG();
             var dirPath = Application.persistentDataPath + "/UserImages/";
-            Debug.Log("위치 : " + dirPath);
             if (!System.IO.Directory.Exists(dirPath))
             {
                 System.IO.Directory.CreateDirectory(dirPath);
             }
-
             long time = new DateTimeOffset(DateTime.Now).ToUnixTimeSeconds();
             imageName = time.ToString()+".png";
-            Debug.Log(imageName);
-            //System.IO.File.WriteAllBytes(dirPath + UnityEngine.Random.Range(0, 100000) + ".png", bytes);
             System.IO.File.WriteAllBytes(dirPath + imageName, bytes);
             Debug.Log("저장된 이미지 이름 : " + dirPath + imageName);
         });
