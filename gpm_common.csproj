@@ -1,0 +1,1035 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LangVersion>8.0</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{7BBD771C-A1F8-EF18-190F-0ED249DFDB17}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>gpm_common</AssemblyName>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>.</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\Bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_2020_3_0;UNITY_2020_3;UNITY_2020;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_INCLUDE_TESTS;USE_SEARCH_ENGINE_API;SCENE_TEMPLATE_MODULE;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;ENABLE_ENGINE_CODE_STRIPPING;ENABLE_ONSCREEN_KEYBOARD;INCLUDE_DYNAMIC_GI;ENABLE_MONO_BDWGC;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;ENABLE_VIDEO;PLATFORM_IOS;ENABLE_RUNTIME_GI;ENABLE_GAMECENTER;ENABLE_NETWORK;ENABLE_IOS_ON_DEMAND_RESOURCES;ENABLE_IOS_APP_SLICING;PLAYERCONNECTION_LISTENS_FIXED_PORT;DEBUGGER_LISTENS_FIXED_PORT;PLATFORM_SUPPORTS_ADS_ID;SUPPORT_ENVIRONMENT_VARIABLES;PLATFORM_SUPPORTS_PROFILER;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;UNITY_IOS;PLATFORM_IPHONE;UNITY_IPHONE;UNITY_IPHONE_API;UNITY_HAS_GOOGLEVR;ENABLE_SPATIALTRACKING;ENABLE_MONO;NET_4_6;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_OSX;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_LEGACY_INPUT_MANAGER;VUFORIA_IOS_SETTINGS;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER;DEVELOPMENT_BUILD</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoConfig>true</NoConfig>
+    <NoStdLib>true</NoStdLib>
+    <AddAdditionalExplicitAssemblyReferences>false</AddAdditionalExplicitAssemblyReferences>
+    <ImplicitlyExpandNETStandardFacades>false</ImplicitlyExpandNETStandardFacades>
+    <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <UnityProjectGenerator>Package</UnityProjectGenerator>
+    <UnityProjectGeneratorVersion>2.0.7</UnityProjectGeneratorVersion>
+    <UnityProjectType>Game:1</UnityProjectType>
+    <UnityBuildTarget>iOS:9</UnityBuildTarget>
+    <UnityVersion>2020.3.0f1</UnityVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Analyzer Include="/Applications/Visual Studio.app/Contents/Resources/lib/monodevelop/AddIns/MonoDevelop.Unity/Analyzers/Microsoft.Unity.Analyzers.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Crypto/DataLengthException.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Common/SevenZip/ArchiveDatabase.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/Deflate/DeflateStream.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/Rar/UnpackV1/PPM/BlockTypes.cs" />
+    <Compile Include="Assets/GPM/Common/Util/Miscellaneous.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/Rar/UnpackV1/Decode/BitDecode.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Common/Zip/Headers/DirectoryEntryHeader.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Readers/ReaderOptions.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/Deflate/FlushType.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/Deflate64/Deflate64Stream.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Common/OptionsBase.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Common/ArchiveType.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Common/Rar/RarRijndael.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/Rar/VM/VMPreparedCommand.cs" />
+    <Compile Include="Assets/GPM/Common/Util/XmlHelper.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Common/Rar/Headers/MarkHeader.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Common/Zip/WinzipAesCryptoStream.cs" />
+    <Compile Include="Assets/GPM/Common/Multilanguage/GpmMultilanguageDefine.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/LitJson/Netstandard15Polyfill.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Common/SevenZip/DataReader.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Common/SevenZip/CBindPair.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Common/Rar/Headers/EndArchiveHeader.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/IO/NonDisposingStream.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/Rar/UnpackV1/Decode/Decode.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Archives/Rar/RarArchive.cs" />
+    <Compile Include="Assets/GPM/Common/Util/GpmFileUtil.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Common/SevenZip/SevenZipVolume.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Archives/AbstractArchive.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/PPMd/PpmdProperties.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Readers/Tar/TarReader.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/Deflate/InfTree.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Common/Zip/StreamingZipFilePart.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/Xz/Filters/BlockFilter.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/IO/ListeningStream.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/Deflate64/InflaterState.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Common/Rar/Headers/ProtectHeader.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Common/IEntry.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Common/Rar/Headers/FileHeader.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/Deflate64/BlockType.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/LZMA/Utilites/Utils.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/Rar/UnpackV2017/Unpack.unpack20_cpp.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/Deflate64/InputBuffer.cs" />
+    <Compile Include="Assets/GPM/Common/Multilanguage/Internal/MultilanguageLoader.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Common/Tar/TarHeaderFactory.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Common/Zip/Headers/IgnoreHeader.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/PPMd/H/PPMContext.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/Rar/UnpackV1/Unpack15.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Common/Rar/RarVolume.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/LZMA/LZ/LzInWindow.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/Rar/UnpackV1/Unpack20.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/ADC/ADCBase.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Common/Volume.cs" />
+    <Compile Include="Assets/GPM/Common/Indicator/Scripts/GpmIndicator.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/Rar/VM/VMFlags.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Crypto/KeyParameter.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Archives/Rar/RarArchiveEntry.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Archives/GZip/GZipWritableArchiveEntry.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Readers/ReaderProgress.cs" />
+    <Compile Include="Assets/GPM/Common/Log/GpmLogger.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Archives/Rar/FileInfoRarFilePart.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Common/Rar/RarFilePart.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Common/ReaderExtractionEventArgs.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/Rar/VM/RarVM.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/Xz/XZFooter.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/Filters/Filter.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/IO/MarkingBinaryReader.cs" />
+    <Compile Include="Assets/GPM/Common/Compress/Editor/Internal/CompressImplementation.cs" />
+    <Compile Include="Assets/GPM/Common/Indicator/Scripts/Internal/Implementation/IndicatorImplementation.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/LZMA/BitVector.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/Filters/BCJFilter.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/LazyReadOnlyCollection.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Writers/Zip/ZipWriter.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/Rar/UnpackV1/Decode/FilterType.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Readers/Rar/SingleVolumeRarReader.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Archives/IWritableArchiveEntry.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/Rar/RarCrcStream.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/PPMd/H/RarNode.cs" />
+    <Compile Include="Assets/GPM/Common/Compress/Editor/GpmCompress.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Common/Zip/SeekableZipFilePart.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Common/SevenZip/CFileItem.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/PPMd/PpmdVersion.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Archives/IArchiveExtensions.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Archives/Zip/ZipWritableArchiveEntry.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Common/Zip/PkwareTraditionalEncryptionData.cs" />
+    <Compile Include="Assets/GPM/Common/Util/GpmPathUtil.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/Xz/Crc64.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Common/IExtractionListener.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Common/FilePart.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/LZMA/LzmaDecoder.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/Rar/UnpackV1/UnpackInline.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/Rar/VM/BitInput.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/LZMA/LzmaStream.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Common/Rar/RarCrcBinaryReader.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Common/Zip/Headers/ZipHeader.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Writers/IWriter.cs" />
+    <Compile Include="Assets/GPM/Common/Indicator/Scripts/Internal/IndicatorField.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/PPMd/PpmdStream.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Common/Zip/ZipVolume.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Common/CompressedBytesReadEventArgs.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Common/Rar/RarEntry.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/Deflate/ZlibCodec.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/Rar/UnpackV1/Decode/LowDistDecode.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Common/GZip/GZipVolume.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Common/MultipartStreamRequiredException.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/BZip2/CBZip2InputStream.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/PPMd/H/State.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/Rar/UnpackV1/Decode/DistDecode.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/Xz/XZIndexRecord.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Common/ExtractionException.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Common/FilePartExtractionBeginEventArgs.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Common/SevenZip/CMethodId.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/LZMA/LzmaBase.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/PPMd/I1/See2Context.cs" />
+    <Compile Include="Assets/GPM/Common/Util/GameObjectContainer.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Crypto/CryptoException.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Common/Rar/Headers/RarHeader.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/Rar/UnpackV2017/PackDef.compress_hpp.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/PPMd/H/Pointer.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Readers/IReaderExtractionListener.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/Xz/Crc32.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Readers/Rar/RarReaderEntry.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Common/Zip/ZipHeaderFactory.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Crypto/IBlockCipher.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/LitJson/Lexer.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/BZip2/CRC.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Readers/AbstractReader.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/LZMA/LzmaEncoderProperties.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Common/Rar/Headers/SignHeader.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Buffers/Utilities.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/LZMA/Registry.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Common/Zip/ZipFilePart.cs" />
+    <Compile Include="Assets/GPM/Common/Multilanguage/Internal/MultilanguageUtil.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Common/Zip/ZipCompressionMethod.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Buffers/DefaultArrayPoolBucket.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/BZip2/CBZip2OutputStream.cs" />
+    <Compile Include="Assets/GPM/Common/Indicator/Scripts/Internal/EditorIndicator.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/Xz/XZStream.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Archives/Zip/ZipArchiveEntry.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/LZMA/LzmaEncoder.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Common/SevenZip/SevenZipEntry.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/Rar/UnpackV2017/BitInput.getbits_hpp.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/Deflate64/OutputWindow.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/Rar/UnpackV2017/Unpack.unpack_cpp.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/LitJson/JsonReader.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/LZMA/Log.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Converters/DataConverter.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Common/EntryStream.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Writers/AbstractWriter.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/LZMA/AesDecoderStream.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Common/SevenZip/CCoderInfo.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/LZMA/ICoder.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Common/Zip/Headers/LocalEntryHeader.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/Rar/UnpackV1/Decode/AudioVariables.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Archives/IArchiveExtractionListener.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Common/IncompleteArchiveException.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Common/Rar/RarCryptoWrapper.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Common/PasswordProtectedException.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Common/SevenZip/SevenZipFilePart.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Crypto/RijndaelEngine.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Common/ArchiveEncoding.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Common/Zip/Headers/ZipHeaderType.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/Deflate/DeflateManager.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/PPMd/I1/Coder.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/Deflate64/HuffmanTree.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/Rar/VM/VMOpType.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Archives/IArchive.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Common/Rar/Headers/ArchiveHeader.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Archives/Rar/RarArchiveEntryFactory.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/PPMd/H/RangeCoder.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Archives/IWritableArchive.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Common/Zip/PkwareTraditionalCryptoStream.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Archives/GZip/GZipArchiveEntry.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/Deflate/ZlibBaseStream.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/LZMA/CRC.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/Rar/VM/VMStandardFilters.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Archives/GZip/GZipArchive.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Common/Zip/WinzipAesKeySize.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Archives/ArchiveFactory.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/Deflate/Inflate.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/Rar/UnpackV1/Unpack.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Archives/IWritableArchiveExtensions.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/ADC/ADCStream.cs" />
+    <Compile Include="Assets/GPM/Common/Multilanguage/Internal/MultilanguageServiceData.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Common/Zip/ZipEntry.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/Rar/UnpackV1/Decode/LitDecode.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/Rar/VM/VMStandardFilterSignature.cs" />
+    <Compile Include="Assets/GPM/Common/Indicator/Scripts/Internal/Vo/LaunchingInfo.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/IO/BufferedSubStream.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/Rar/UnpackV2017/Unpack.unpack50_cpp.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Archives/Tar/TarArchiveEntry.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/PPMd/I1/MemoryNode.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Archives/SevenZip/SevenZipArchive.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Common/ExtractionOptions.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Common/Rar/Headers/FileNameDecoder.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/LZMA/RangeCoder/RangeCoder.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Common/Rar/Headers/IRarHeader.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/Rar/UnpackV2017/unpack_hpp.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Common/Tar/TarReadOnlySubStream.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/Rar/RarStream.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/PPMd/I1/ModelRestorationMethod.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Common/Tar/Headers/TarHeader.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/Rar/UnpackV2017/Unpack.unpack15_cpp.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Archives/Rar/SeekableFilePart.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Writers/WriterFactory.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/LZMA/DecoderStream.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/Rar/UnpackV1/UnpackFilter.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/Xz/CheckType.cs" />
+    <Compile Include="Assets/GPM/Common/Indicator/Scripts/GpmIndicatorData.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Common/Rar/Headers/NewSubHeaderType.cs" />
+    <Compile Include="Assets/GPM/Common/Indicator/Scripts/Internal/UnityWebRequestHelper.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/PPMd/H/ModelPPM.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Common/SevenZip/ArchiveReader.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/Deflate/ZlibStream.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/PPMd/I1/PpmState.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/BZip2/BZip2Stream.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Common/IVolume.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/Rar/VM/VMCommands.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Common/Zip/WinzipAesEncryptionData.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/Rar/UnpackV1/UnpackUtility.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Common/Zip/Headers/Zip64DirectoryEndHeader.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Archives/Rar/RarArchive.Extensions.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Common/Tar/TarVolume.cs" />
+    <Compile Include="Assets/GPM/Common/GpmCommon.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/PPMd/I1/Pointer.cs" />
+    <Compile Include="Assets/GPM/Common/Multilanguage/Internal/MultilanguageXml.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/LZMA/Utilites/CrcCheckStream.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/PPMd/H/SEE2Context.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/Rar/MultiVolumeReadOnlyStream.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Writers/Tar/TarWriterOptions.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/PPMd/I1/Allocator.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Archives/Zip/ZipArchive.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/Rar/UnpackV2017/Unpack.unpack30_cpp.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Writers/Zip/ZipCentralDirectoryEntry.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Common/Zip/Headers/DirectoryEndHeader.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/Rar/RarCRC.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/Deflate64/InflaterManaged.cs" />
+    <Compile Include="Assets/GPM/Common/Multilanguage/Internal/MultilanguageImplementation.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/Rar/UnpackV2017/Unpack.rawint_hpp.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Common/Rar/Headers/RarHeaderFactory.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Utility.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/Rar/IRarUnpack.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/LZMA/LZ/LzBinTree.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Archives/IArchiveEntryExtensions.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Common/Zip/Headers/ZipFileEntry.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Common/CryptographicException.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Archives/SevenZip/SevenZipArchiveEntry.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/BZip2/BZip2Constants.cs" />
+    <Compile Include="Assets/GPM/Common/Util/GpmJsonMapper.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/PPMd/H/RarMemBlock.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/Rar/UnpackV1/Decode/MultDecode.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Readers/IReader.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Crypto/Crc32Stream.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Readers/Rar/RarReaderVolume.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/LZMA/RangeCoder/RangeCoderBit.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/Filters/BCJ2Filter.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/LitJson/JsonWriter.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Common/Rar/RarCryptoBinaryReader.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/Deflate/DeflateTree.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Common/Tar/TarEntry.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Writers/Zip/ZipWriterEntryOptions.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Readers/Zip/ZipReader.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/IO/StreamingMode.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/EnumExtensions.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Archives/Rar/FileInfoRarArchiveVolume.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/Rar/UnpackV1/Unpack50.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Readers/ReaderFactory.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Writers/GZip/GZipWriter.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/Xz/Filters/Lzma2Filter.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Readers/Rar/RarReader.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/Deflate/GZipStream.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Lazy.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/Xz/XZReadOnlyStream.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Writers/GZip/GZipWriterOptions.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Common/GZip/GZipFilePart.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/LZMA/LZipStream.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/LitJson/JsonMapper.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/PPMd/H/StateRef.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Common/ArchiveExtractionEventArgs.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Common/Zip/SeekableZipHeaderFactory.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Common/Zip/StreamingZipHeaderFactory.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/Deflate/CRC32.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/Xz/MultiByteIntegers.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/Rar/VM/VMPreparedOperand.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Common/Rar/Headers/ArchiveCryptHeader.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/LZMA/Bcj2DecoderStream.cs" />
+    <Compile Include="Assets/GPM/Common/Indicator/Scripts/Internal/BaseIndicator.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Archives/Tar/TarWritableArchiveEntry.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Common/Tar/Headers/EntryType.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/PPMd/I1/Model.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Common/InvalidFormatException.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Archives/Rar/StreamRarArchiveVolume.cs" />
+    <Compile Include="Assets/GPM/Common/Indicator/Scripts/Internal/Consts/Launching.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/IO/RewindableStream.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/IO/CountingWritableSubStream.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/LitJson/JsonData.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Common/GZip/GZipEntry.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Common/ArchiveException.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/Xz/ReadOnlyStream.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Common/SevenZip/CStreamSwitch.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/LZMA/RangeCoder/RangeCoderBitTree.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/ReadOnlyCollection.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Common/Zip/Headers/LocalEntryHeaderExtraFactory.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/Rar/UnpackV1/Decode/RepDecode.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Writers/WriterOptions.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Buffers/DefaultArrayPool.cs" />
+    <Compile Include="Assets/GPM/Common/Multilanguage/GpmMultilanguage.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Readers/GZip/GZipReader.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Archives/Rar/RarArchiveVolumeFactory.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Common/Tar/TarFilePart.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/Xz/XZIndex.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/CompressionMode.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Common/Rar/Headers/CommentHeader.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Common/SevenZip/CFolder.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/Xz/BinaryUtils.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/Rar/UnpackV2017/FragmentedWindow.unpack50frag_cpp.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Crypto/ICipherParameters.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Readers/Rar/NonSeekableStreamFilePart.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/Xz/XZIndexMarkerReachedException.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/LitJson/ParserToken.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/Deflate/ZlibConstants.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/LZMA/Utilites/IPasswordProvider.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Archives/AbstractWritableArchive.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Writers/Zip/ZipWriterOptions.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/PPMd/H/FreqData.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Writers/Tar/TarWriter.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Common/Zip/Headers/HeaderFlags.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Common/Entry.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Common/Zip/Headers/Zip64DirectoryEndLocatorHeader.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/Xz/XZBlock.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/LZMA/LZ/LzOutWindow.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/Deflate/Zlib.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/LitJson/JsonMockWrapper.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/PPMd/I1/PpmContext.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Archives/IArchiveEntry.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/IO/ReadOnlySubStream.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Common/Rar/Headers/AVHeader.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Buffers/ArrayPool.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/Rar/UnpackV2017/Unpack.unpackinline_cpp.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/LZMA/Utilites/CrcBuilderStream.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/PPMd/H/SubAllocator.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Common/CompressionType.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/Deflate64/DeflateInput.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/Rar/UnpackV1/Decode/PackDef.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Common/IEntry.Extensions.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Common/Rar/Headers/Flags.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Readers/IReaderExtensions.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/Deflate64/MatchState.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Common/ExtractionMethods.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Common/MultiVolumeExtractionException.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/Deflate64/Match.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/Rar/VM/VMCmdFlags.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Readers/Rar/MultiVolumeRarReader.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Writers/IWriterExtensions.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/Deflate64/FastEncoderStatus.cs" />
+    <Compile Include="Assets/GPM/Common/Util/EditorCoroutine.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/Rar/VM/VMPreparedProgram.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/Rar/UnpackV2017/BitInput.getbits_cpp.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/Rar/UnpackV2017/Unpack.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Common/Zip/Headers/SplitHeader.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/Xz/XZHeader.cs" />
+    <Compile Include="Assets/GPM/Common/Indicator/Scripts/Internal/Vo/QueueItem.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Common/FlagUtility.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/Rar/UnpackV1/Decode/CodeType.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/LitJson/JsonException.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/SharpCompress/Archives/Tar/TarArchive.cs" />
+    <Compile Include="Assets/GPM/Common/Indicator/Scripts/Internal/InAppIndicator.cs" />
+    <Compile Include="Assets/GPM/Common/ThirdParty/LitJson/IJsonWrapper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+     <None Include="Assets/GPM/Common/gpm_common.asmdef" />
+     <None Include="Assets/GPM/Common/ThirdParty/SharpCompress/Compressors/Rar/UnpackV2017/notes.txt" />
+    <Reference Include="UnityEngine">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AIModule">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ARModule">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.ARModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AccessibilityModule">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AccessibilityModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AndroidJNIModule">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AndroidJNIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AnimationModule">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AnimationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AssetBundleModule">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClothModule">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.ClothModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CrashReportingModule">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.CrashReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.DSPGraphModule">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.DSPGraphModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.DirectorModule">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.DirectorModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GIModule">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.GIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GameCenterModule">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.GameCenterModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GridModule">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.GridModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.HotReloadModule">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.HotReloadModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.IMGUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.ImageConversionModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputModule">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.InputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputLegacyModule">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.InputLegacyModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.JSONSerializeModule">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.JSONSerializeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.LocalizationModule">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.LocalizationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ParticleSystemModule">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.ParticleSystemModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PerformanceReportingModule">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.PerformanceReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Physics2DModule">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.Physics2DModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ProfilerModule">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.ProfilerModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ScreenCaptureModule">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.ScreenCaptureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SharedInternalsModule">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.SharedInternalsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteMaskModule">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.SpriteMaskModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteShapeModule">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.SpriteShapeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.StreamingModule">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.StreamingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SubstanceModule">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.SubstanceModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SubsystemsModule">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.SubsystemsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TLSModule">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.TLSModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainModule">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.TerrainModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainPhysicsModule">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.TerrainPhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextCoreModule">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.TextCoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.TextRenderingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TilemapModule">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.TilemapModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIElementsModule">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UIElementsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIElementsNativeModule">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UIElementsNativeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UNETModule">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UNETModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UmbraModule">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UmbraModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityAnalyticsModule">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UnityAnalyticsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityConnectModule">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UnityConnectModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityCurlModule">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UnityCurlModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityTestProtocolModule">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UnityTestProtocolModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestModule">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UnityWebRequestModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAssetBundleModule">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAudioModule">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestTextureModule">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestWWWModule">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VFXModule">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.VFXModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VRModule">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.VRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VehiclesModule">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.VehiclesModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VideoModule">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.VideoModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.WindModule">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.WindModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.XRModule">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.CoreModule">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.GraphViewModule">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.GraphViewModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.PackageManagerUIModule">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.PackageManagerUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.SceneTemplateModule">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.SceneTemplateModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UIElementsModule">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.UIElementsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UIElementsSamplesModule">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.UIElementsSamplesModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UIServiceModule">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.UIServiceModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UnityConnectModule">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.UnityConnectModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Graphs">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEditor.Graphs.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.OSXStandalone.Extensions">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Android.Extensions">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
+      <HintPath>/Applications/Visual Studio.app/Contents/Resources/lib/monodevelop/AddIns/MonoDevelop.Unity/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
+    </Reference>
+    <Reference Include="Vuforia.UnityExtensions.Editor">
+      <HintPath>Library/PackageCache/com.ptc.vuforia.engine@2df2f4d646/Vuforia/Plugins/Managed/Editor/Vuforia.UnityExtensions.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Vuforia.UnityExtensions">
+      <HintPath>Library/PackageCache/com.ptc.vuforia.engine@2df2f4d646/Vuforia/Plugins/Managed/Runtime/Vuforia.UnityExtensions.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Common">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="mscorlib">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/System.Runtime.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/System.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/System.Xml.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/System.Numerics.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics.Vectors">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Microsoft.CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/System.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Win32.Primitives">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/Microsoft.Win32.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.AppContext">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.AppContext.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Concurrent">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Collections.Concurrent.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.NonGeneric">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Collections.NonGeneric.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Specialized">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Collections.Specialized.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Annotations">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ComponentModel.Annotations.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.EventBasedAsync">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ComponentModel.EventBasedAsync.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Primitives">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ComponentModel.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.TypeConverter">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ComponentModel.TypeConverter.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ComponentModel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Console">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Console.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.Common">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Data.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Contracts">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Debug">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.Debug.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.FileVersionInfo">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.FileVersionInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Process">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.Process.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.StackTrace">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.StackTrace.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.TextWriterTraceListener">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.TextWriterTraceListener.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Tools">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.Tools.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.TraceSource">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.TraceSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing.Primitives">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Drawing.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Dynamic.Runtime">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Dynamic.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Globalization.Calendars">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Globalization.Calendars.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Globalization.Extensions">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Globalization.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Globalization">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Globalization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression.ZipFile">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.Compression.ZipFile.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.DriveInfo">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.FileSystem.DriveInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.Primitives">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.FileSystem.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.Watcher">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.FileSystem.Watcher.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.FileSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.IsolatedStorage">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.IsolatedStorage.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.MemoryMappedFiles">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.MemoryMappedFiles.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Pipes">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.Pipes.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.UnmanagedMemoryStream">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.UnmanagedMemoryStream.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq.Expressions">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Linq.Expressions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq.Parallel">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Linq.Parallel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq.Queryable">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Linq.Queryable.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Rtc">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Http.Rtc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.NameResolution">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.NameResolution.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.NetworkInformation">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.NetworkInformation.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Ping">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Ping.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Primitives">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Requests">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Requests.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Security">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Sockets">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Sockets.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.WebHeaderCollection">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.WebHeaderCollection.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.WebSockets.Client">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.WebSockets.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.WebSockets">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.WebSockets.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ObjectModel">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Emit.ILGeneration">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.Emit.ILGeneration.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Emit.Lightweight">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.Emit.Lightweight.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Emit">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.Emit.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Extensions">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Primitives">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Resources.Reader">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Resources.Reader.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Resources.ResourceManager">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Resources.ResourceManager.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Resources.Writer">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Resources.Writer.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.VisualC">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.CompilerServices.VisualC.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Extensions">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Handles">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Handles.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices.WindowsRuntime">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.InteropServices.WindowsRuntime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.InteropServices.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Numerics">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Numerics.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Formatters">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Serialization.Formatters.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Json">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Serialization.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Primitives">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Serialization.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Xml">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Serialization.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Claims">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Claims.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Algorithms">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Cryptography.Algorithms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Csp">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Cryptography.Csp.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Encoding">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Cryptography.Encoding.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Primitives">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Cryptography.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.X509Certificates">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Cryptography.X509Certificates.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Principal">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Principal.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.SecureString">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.SecureString.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel.Duplex">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ServiceModel.Duplex.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel.Http">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ServiceModel.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel.NetTcp">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ServiceModel.NetTcp.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel.Primitives">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ServiceModel.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel.Security">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ServiceModel.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encoding.Extensions">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Text.Encoding.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encoding">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Text.Encoding.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.RegularExpressions">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Text.RegularExpressions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Overlapped">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.Overlapped.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Parallel">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.Tasks.Parallel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.Tasks.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Thread">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.Thread.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.ThreadPool">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.ThreadPool.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Timer">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.Timer.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.ReaderWriter">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.ReaderWriter.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XDocument">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XDocument.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XPath.XDocument">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XPath.XDocument.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XPath">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XPath.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XmlDocument">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XmlDocument.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XmlSerializer">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XmlSerializer.dll</HintPath>
+    </Reference>
+    <Reference Include="netstandard">
+      <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/netstandard.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="UnityEditor.UI.csproj">
+      <Project>{53374EF6-65D8-CF20-479E-22346DCBE200}</Project>
+      <Name>UnityEditor.UI</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEngine.UI.csproj">
+      <Project>{0898274C-9C99-648F-BA3F-203C00B1C40D}</Project>
+      <Name>UnityEngine.UI</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="GenerateTargetFrameworkMonikerAttribute" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

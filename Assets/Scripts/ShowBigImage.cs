@@ -8,6 +8,9 @@ public class ShowBigImage : MonoBehaviour
 {
     public GameObject bigImage;
     public GameObject bigImageBackground;
+    //211024 수정
+    public Sprite selectedSprite;
+    public GameObject ImageTexture;
 
     public void showSpriteImage()
     {
@@ -16,9 +19,10 @@ public class ShowBigImage : MonoBehaviour
         GameObject _Image = EventSystem.current.currentSelectedGameObject;
         Debug.Log(_Image.name);
 
-        Sprite _sprite = _Image.GetComponent<Image>().sprite;
+        selectedSprite = _Image.GetComponent<Image>().sprite;
+        ImageTexture.GetComponent<Image>().sprite = selectedSprite;
+        bigImage.GetComponent<RawImage>().texture = textureFromSprite(selectedSprite);
 
-        bigImage.GetComponent<RawImage>().texture = textureFromSprite(_sprite);
         bigImage.GetComponent<CanvasRenderer>().SetAlpha(100);
         bigImageBackground.GetComponent<Image>().color = new Color(0, 0, 0, 0.85f);
         bigImageBackground.transform.SetAsLastSibling();

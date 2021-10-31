@@ -1,0 +1,19 @@
+﻿<Properties StartupConfiguration="{47606EA0-7579-1470-B3C1-4A64C96D5C54}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/LoadUserImages.cs">
+    <Files>
+      <File FileName="Assets/Scripts/PickUserImage.cs" Line="65" Column="4" />
+      <File FileName="Assets/Scripts/LoadUserImages.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/LoadServiceImages.cs" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.UnityEngine.TestRunner PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="0abfd6dc-c22b-46a2-8f32-36f19a9bda79" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/roxyyujin/graduate_project/AR_tatto_simulation/Assets/Scripts/LoadServiceImages.cs" relfile="Assets/Scripts/LoadServiceImages.cs" line="103" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

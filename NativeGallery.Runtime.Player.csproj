@@ -256,7 +256,7 @@
       <HintPath>Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="Vuforia.UnityExtensions">
-      <HintPath>Library/PackageCache/com.ptc.vuforia.engine@2df2f4d646/Vuforia/Plugins/Managed/iOS/Vuforia.UnityExtensions.dll</HintPath>
+      <HintPath>Library/PackageCache/com.ptc.vuforia.engine@efa13d4486/Vuforia/Plugins/Managed/iOS/Vuforia.UnityExtensions.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>

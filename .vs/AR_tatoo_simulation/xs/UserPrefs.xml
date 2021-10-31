@@ -1,0 +1,28 @@
+﻿<Properties StartupConfiguration="{177E9E35-640F-5D60-95B2-EECDCA459CE1}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/SelectMenu.cs">
+    <Files>
+      <File FileName="Assets/Scripts/RegisterUser.cs" Line="21" Column="6" />
+      <File FileName="Assets/Scripts/MoveToLoginScene.cs" />
+      <File FileName="Assets/Scripts/SelectMenu.cs" Line="21" Column="6" />
+      <File FileName="Assets/Scripts/BackToMenu.cs" />
+      <File FileName="Assets/Scripts/ShowImages.cs" />
+      <File FileName="Assets/Scripts/MoveToARScene.cs" Line="18" Column="6" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="AR_tatoo_simulation" expanded="True" selected="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.UnityEngine.TestRunner.Player PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.UnityEngine.TestRunner PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="c1129398-2e5d-44d6-98b3-8a59439a72fb" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

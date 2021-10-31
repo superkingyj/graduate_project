@@ -56,13 +56,13 @@
     <Analyzer Include="/Applications/Visual Studio.app/Contents/Resources/lib/monodevelop/AddIns/MonoDevelop.Unity/Analyzers/Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Library/PackageCache/com.unity.ide.vscode@1.2.3/Editor/ProjectGeneration/ProjectGeneration.cs" />
-    <Compile Include="Library/PackageCache/com.unity.ide.vscode@1.2.3/Editor/ProjectGeneration/FileIO.cs" />
     <Compile Include="Library/PackageCache/com.unity.ide.vscode@1.2.3/Editor/VSCodeDiscovery.cs" />
-    <Compile Include="Library/PackageCache/com.unity.ide.vscode@1.2.3/Editor/ProjectGeneration/ProjectGenerationFlag.cs" />
-    <Compile Include="Library/PackageCache/com.unity.ide.vscode@1.2.3/Editor/VSCodeScriptEditor.cs" />
     <Compile Include="Library/PackageCache/com.unity.ide.vscode@1.2.3/Editor/ProjectGeneration/GUIDGenerator.cs" />
     <Compile Include="Library/PackageCache/com.unity.ide.vscode@1.2.3/Editor/ProjectGeneration/AssemblyNameProvider.cs" />
+    <Compile Include="Library/PackageCache/com.unity.ide.vscode@1.2.3/Editor/ProjectGeneration/ProjectGeneration.cs" />
+    <Compile Include="Library/PackageCache/com.unity.ide.vscode@1.2.3/Editor/ProjectGeneration/FileIO.cs" />
+    <Compile Include="Library/PackageCache/com.unity.ide.vscode@1.2.3/Editor/ProjectGeneration/ProjectGenerationFlag.cs" />
+    <Compile Include="Library/PackageCache/com.unity.ide.vscode@1.2.3/Editor/VSCodeScriptEditor.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Library/PackageCache/com.unity.ide.vscode@1.2.3/Editor/Unity.com.unity.vscode.Editor.asmdef" />
@@ -304,10 +304,10 @@
       <HintPath>/Applications/Visual Studio.app/Contents/Resources/lib/monodevelop/AddIns/MonoDevelop.Unity/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
     <Reference Include="Vuforia.UnityExtensions.Editor">
-      <HintPath>Library/PackageCache/com.ptc.vuforia.engine@2df2f4d646/Vuforia/Plugins/Managed/Editor/Vuforia.UnityExtensions.Editor.dll</HintPath>
+      <HintPath>Library/PackageCache/com.ptc.vuforia.engine@efa13d4486/Vuforia/Plugins/Managed/Editor/Vuforia.UnityExtensions.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Vuforia.UnityExtensions">
-      <HintPath>Library/PackageCache/com.ptc.vuforia.engine@2df2f4d646/Vuforia/Plugins/Managed/Runtime/Vuforia.UnityExtensions.dll</HintPath>
+      <HintPath>Library/PackageCache/com.ptc.vuforia.engine@efa13d4486/Vuforia/Plugins/Managed/Runtime/Vuforia.UnityExtensions.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll</HintPath>

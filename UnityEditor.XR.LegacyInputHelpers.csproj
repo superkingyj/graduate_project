@@ -56,12 +56,12 @@
     <Analyzer Include="/Applications/Visual Studio.app/Contents/Resources/lib/monodevelop/AddIns/MonoDevelop.Unity/Analyzers/Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Library/PackageCache/com.unity.xr.legacyinputhelpers@2.1.7/Editor/CameraOffsetEditor.cs" />
+    <Compile Include="Library/PackageCache/com.unity.xr.legacyinputhelpers@2.1.7/Editor/ArmModels/TransitionArmModelEditor.cs" />
     <Compile Include="Library/PackageCache/com.unity.xr.legacyinputhelpers@2.1.7/Editor/SeedXRInputBindings/SeedXRInputBindings.cs" />
     <Compile Include="Library/PackageCache/com.unity.xr.legacyinputhelpers@2.1.7/Editor/ArmModels/SwingArmModelEditor.cs" />
-    <Compile Include="Library/PackageCache/com.unity.xr.legacyinputhelpers@2.1.7/Editor/CameraOffsetEditor.cs" />
     <Compile Include="Library/PackageCache/com.unity.xr.legacyinputhelpers@2.1.7/Editor/ArmModels/ArmModelEditor.cs" />
     <Compile Include="Library/PackageCache/com.unity.xr.legacyinputhelpers@2.1.7/Editor/MenuUtils.cs" />
-    <Compile Include="Library/PackageCache/com.unity.xr.legacyinputhelpers@2.1.7/Editor/ArmModels/TransitionArmModelEditor.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Library/PackageCache/com.unity.xr.legacyinputhelpers@2.1.7/Editor/LegacyInputHelpersEditor.asmdef" />
@@ -303,10 +303,10 @@
       <HintPath>/Applications/Visual Studio.app/Contents/Resources/lib/monodevelop/AddIns/MonoDevelop.Unity/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
     <Reference Include="Vuforia.UnityExtensions.Editor">
-      <HintPath>Library/PackageCache/com.ptc.vuforia.engine@2df2f4d646/Vuforia/Plugins/Managed/Editor/Vuforia.UnityExtensions.Editor.dll</HintPath>
+      <HintPath>Library/PackageCache/com.ptc.vuforia.engine@efa13d4486/Vuforia/Plugins/Managed/Editor/Vuforia.UnityExtensions.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Vuforia.UnityExtensions">
-      <HintPath>Library/PackageCache/com.ptc.vuforia.engine@2df2f4d646/Vuforia/Plugins/Managed/Runtime/Vuforia.UnityExtensions.dll</HintPath>
+      <HintPath>Library/PackageCache/com.ptc.vuforia.engine@efa13d4486/Vuforia/Plugins/Managed/Runtime/Vuforia.UnityExtensions.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll</HintPath>

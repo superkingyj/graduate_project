@@ -10,6 +10,7 @@ public class TakePhotosAndVideos : MonoBehaviour
 
     public void backButtonClick()
     {
+        //Destroy(GameObject.Find("ImageTexture"));
         SceneManager.LoadScene("02_Menu");
     }
 

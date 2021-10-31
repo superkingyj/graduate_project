@@ -66,6 +66,7 @@ public class LoadUserImages : MonoBehaviour
             }
 
             string pathTemp = pathPreFix + tstring;
+            Debug.Log(pathTemp);
             WWW www = new WWW(pathTemp);
 
             Texture2D texTmp = new Texture2D(1024, 1024, TextureFormat.DXT1, false);

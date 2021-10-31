@@ -57,42 +57,42 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Editor/UI/RawImageEditor.cs" />
-    <Compile Include="/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Editor/UI/GraphicEditor.cs" />
     <Compile Include="/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Editor/UI/RectMask2DEditor.cs" />
-    <Compile Include="/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Editor/UI/SelectableEditor.cs" />
-    <Compile Include="/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Editor/UI/GridLayoutGroupEditor.cs" />
-    <Compile Include="/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Editor/UI/AspectRatioFitterEditor.cs" />
     <Compile Include="/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Editor/UI/PropertyDrawers/DropdownOptionListDrawer.cs" />
     <Compile Include="/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Editor/UI/ContentSizeFitterEditor.cs" />
-    <Compile Include="/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Editor/UI/ImageEditor.cs" />
-    <Compile Include="/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Editor/UI/SliderEditor.cs" />
-    <Compile Include="/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Editor/UI/ScrollbarEditor.cs" />
-    <Compile Include="/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Editor/UI/LayoutElementEditor.cs" />
     <Compile Include="/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Editor/UI/MenuOptions.cs" />
-    <Compile Include="/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Editor/UI/ToggleEditor.cs" />
     <Compile Include="/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Editor/UI/PropertyDrawers/FontDataDrawer.cs" />
-    <Compile Include="/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Editor/UI/DropdownEditor.cs" />
-    <Compile Include="/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Editor/UI/ButtonEditor.cs" />
     <Compile Include="/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Editor/EventSystem/Physics2DRaycasterEditor.cs" />
     <Compile Include="/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Editor/UI/SelfControllerEditor.cs" />
     <Compile Include="/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Editor/UI/MaskEditor.cs" />
-    <Compile Include="/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Editor/EventSystem/PhysicsRaycasterEditor.cs" />
     <Compile Include="/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Editor/UI/PropertyDrawers/ColorBlockDrawer.cs" />
     <Compile Include="/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Editor/UI/InterceptedEventsPreview.cs" />
-    <Compile Include="/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Editor/UI/TextEditor.cs" />
     <Compile Include="/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Editor/UI/InputFieldEditor.cs" />
-    <Compile Include="/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Editor/UI/ScrollRectEditor.cs" />
     <Compile Include="/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Editor/Properties/AssemblyInfo.cs" />
-    <Compile Include="/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Editor/UI/PropertyDrawers/AnimationTriggersDrawer.cs" />
-    <Compile Include="/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Editor/EventSystem/EventTriggerEditor.cs" />
     <Compile Include="/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Editor/UI/LayoutPropertiesPreview.cs" />
-    <Compile Include="/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Editor/UI/HorizontalOrVerticalLayoutGroupEditor.cs" />
-    <Compile Include="/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Editor/UI/PropertyDrawers/SpriteStateDrawer.cs" />
-    <Compile Include="/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Editor/UI/PropertyDrawers/NavigationDrawer.cs" />
     <Compile Include="/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Editor/EventSystem/EventSystemEditor.cs" />
     <Compile Include="/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Editor/UI/CanvasScalerEditor.cs" />
     <Compile Include="/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Editor/UI/SpriteDrawUtility.cs" />
     <Compile Include="/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Editor/UI/PrefabLayoutRebuilder.cs" />
+    <Compile Include="/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Editor/UI/GraphicEditor.cs" />
+    <Compile Include="/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Editor/UI/SelectableEditor.cs" />
+    <Compile Include="/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Editor/UI/GridLayoutGroupEditor.cs" />
+    <Compile Include="/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Editor/UI/AspectRatioFitterEditor.cs" />
+    <Compile Include="/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Editor/UI/ImageEditor.cs" />
+    <Compile Include="/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Editor/UI/SliderEditor.cs" />
+    <Compile Include="/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Editor/UI/ScrollbarEditor.cs" />
+    <Compile Include="/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Editor/UI/LayoutElementEditor.cs" />
+    <Compile Include="/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Editor/UI/ToggleEditor.cs" />
+    <Compile Include="/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Editor/UI/DropdownEditor.cs" />
+    <Compile Include="/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Editor/UI/ButtonEditor.cs" />
+    <Compile Include="/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Editor/EventSystem/PhysicsRaycasterEditor.cs" />
+    <Compile Include="/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Editor/UI/TextEditor.cs" />
+    <Compile Include="/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Editor/UI/ScrollRectEditor.cs" />
+    <Compile Include="/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Editor/UI/PropertyDrawers/AnimationTriggersDrawer.cs" />
+    <Compile Include="/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Editor/EventSystem/EventTriggerEditor.cs" />
+    <Compile Include="/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Editor/UI/HorizontalOrVerticalLayoutGroupEditor.cs" />
+    <Compile Include="/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Editor/UI/PropertyDrawers/SpriteStateDrawer.cs" />
+    <Compile Include="/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Editor/UI/PropertyDrawers/NavigationDrawer.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Editor/UnityEditor.UI.asmdef" />
@@ -334,10 +334,10 @@
       <HintPath>/Applications/Visual Studio.app/Contents/Resources/lib/monodevelop/AddIns/MonoDevelop.Unity/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
     <Reference Include="Vuforia.UnityExtensions.Editor">
-      <HintPath>Library/PackageCache/com.ptc.vuforia.engine@2df2f4d646/Vuforia/Plugins/Managed/Editor/Vuforia.UnityExtensions.Editor.dll</HintPath>
+      <HintPath>Library/PackageCache/com.ptc.vuforia.engine@efa13d4486/Vuforia/Plugins/Managed/Editor/Vuforia.UnityExtensions.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Vuforia.UnityExtensions">
-      <HintPath>Library/PackageCache/com.ptc.vuforia.engine@2df2f4d646/Vuforia/Plugins/Managed/Runtime/Vuforia.UnityExtensions.dll</HintPath>
+      <HintPath>Library/PackageCache/com.ptc.vuforia.engine@efa13d4486/Vuforia/Plugins/Managed/Runtime/Vuforia.UnityExtensions.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll</HintPath>

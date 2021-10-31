@@ -2,15 +2,16 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PickUserImage : MonoBehaviour
 {
-
     internal Texture2D texture;
-    internal string imageName;
+    internal string imageName = null;
 
     public string PickImage(int maxSize)
     {
+
         NativeGallery.Permission permission = NativeGallery.GetImageFromGallery((path) =>
         {
             Debug.Log("Image path: " + path);
@@ -55,51 +56,16 @@ public class PickUserImage : MonoBehaviour
             imageName = time.ToString()+".png";
             System.IO.File.WriteAllBytes(dirPath + imageName, bytes);
             Debug.Log("저장된 이미지 이름 : " + dirPath + imageName);
-        });
+            var getPickedImage = new GetPickedImage();
+            Debug.Log("getPickedImage update 호출");
+            getPickedImage.Update();
 
+            GameObject.Find("ImageName").GetComponent<ImageName>().setpickedImageName(imageName);
+            DontDestroyOnLoad(GameObject.Find("ImageName"));
+            Debug.Log("이미지 처리 다했고 이제 AR씬 불러옵니다~!");
+            SceneManager.LoadScene("08_ARTest2");
+        });
         return imageName;
     }
+
 }
-
-//internal class MakeReadableImage
-//{
-//    internal Texture2D createReadabeTexture2D(Texture2D texture2d)
-//    {
-//        RenderTexture renderTexture = RenderTexture.GetTemporary(
-//                    texture2d.width,
-//                    texture2d.height,
-//                    0,
-//                    RenderTextureFormat.Default,
-//                    RenderTextureReadWrite.Linear);
-
-//        Graphics.Blit(texture2d, renderTexture);
-//        RenderTexture previous = RenderTexture.active;
-//        RenderTexture.active = renderTexture;
-
-//        Texture2D readableTextur2D = new Texture2D(texture2d.width, texture2d.height);
-//        readableTextur2D.ReadPixels(new Rect(0, 0, renderTexture.width, renderTexture.height), 0, 0);
-//        readableTextur2D.Apply();
-//        RenderTexture.active = previous;
-//        RenderTexture.ReleaseTemporary(renderTexture);
-
-//        return readableTextur2D;
-
-//    }
-//}
-
-//internal class SaveImageToLocalFolder
-//{
-//    internal void saving(byte[] bytes)
-//    {
-//        Debug.Log("사용자 사진을 넘겨 받았음");
-//        var dirPath = Application.persistentDataPath + "/UserImages/";
-//        Debug.Log("위치 : " + dirPath);
-//        if (!System.IO.Directory.Exists(dirPath))
-//        {
-//            System.IO.Directory.CreateDirectory(dirPath);
-//        }
-//        System.IO.File.WriteAllBytes(dirPath + UnityEngine.Random.Range(0, 100000) + ".png", bytes);
-//    }
-    
-//}
-

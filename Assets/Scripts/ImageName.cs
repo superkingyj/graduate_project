@@ -5,7 +5,7 @@ using UnityEngine;
 public class ImageName : MonoBehaviour
 {
 
-    public string pickedImageName;
+    public string pickedImageName = null;
 
     public void setpickedImageName(string pickedImageName)
     {

@@ -5,21 +5,18 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/00_StratScene.unity
     guid: 9f7a88d5a8384490c80fd3b0bfe96c91
   - enabled: 0
-    path: Assets/Scenes/01_Login.unity
-    guid: e57e7179922e346d3a8bef92e920eb55
+    path: Assets/Scenes/02_MenuTest.unity
+    guid: bf14ce49a458e4c91905193020e6d948
   - enabled: 1
     path: Assets/Scenes/02_Menu.unity
     guid: 5b3c5bb29b9c24f40bf8543bd680e48e
   - enabled: 1
     path: Assets/Scenes/03_PickImage.unity
     guid: c49f366237aa94c099abe88ea66eac86
-  - enabled: 0
-    path: Assets/Scenes/04_UploadImage.unity
-    guid: af4129ae396ae4f24bacb1687a5359e4
   - enabled: 1
     path: Assets/Scenes/05_Gallery.unity
     guid: 647654ce4751c476e9a42edf627ddf73
@@ -27,11 +24,13 @@ EditorBuildSettings:
     path: Assets/Scenes/06_Community.unity
     guid: 4faa0b7de59e04081b3e293bb6c22f05
   - enabled: 1
-    path: Assets/Scenes/07_AR.unity
-    guid: 2fc29d731a46f493dbad114e63e0786d
+    path: Assets/Scenes/08_ARTest2.unity
+    guid: 6c3f165eb62b2472fbaa4dd99d629dac
   - enabled: 0
-    path: Assets/Scenes/PickImageTest.unity
-    guid: 4daf425c12f664296ab354f2b9098f73
+    path: Assets/Scenes/08_ARTest.unity
+    guid: 824726358d8824740ae01a05508c65e4
   m_configObjects:
+    UnityEditor.XR.ARKit.ARKitSettings: {fileID: 11400000, guid: c51f00cbab65b4fc0a758c5ceec9a8dc,
+      type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: f9dab51e3810d44a1aca29298729f32f,
       type: 2}

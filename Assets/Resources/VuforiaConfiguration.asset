@@ -9,12 +9,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -2067402452, guid: 1e108ae5f2133934f948edded555f03e, type: 3}
+  m_Script: {fileID: -2067402452, guid: 8a9a760f95896c34689febc965510927, type: 3}
   m_Name: VuforiaConfiguration
   m_EditorClassIdentifier: 
   vuforia:
-    vuforiaLicenseKey: Afbgb7P/////AAABmUcQNibO5kcBhXyDQ/urXkiB9+Lw9oYu4x9/ywBoVIKiSGSFn9xhMJZR6zXC7ANvnH+2tRLPTpjdFVILjYl5Cv0FLc345dvaIwC/IjfwT5XycWJw4yqZzCxn9YaGb3vuPtBa61obxJsjaJgbBoXvOkXXVr0uNCvS0Sl+Ub2q5nSWRm8jxLHc3JV8Gry577yXUl/6Wc8Ki+mKnkgoq9qG74a9oKAHpGCDSzxVqcQi9jozxPnrnZTYlCOcucub4yyDJA2OTe+Yqo+BdwTHwryoQHJkMvZFBcQmXGATTFZdyhxG9hxjoK2ESD/vbqgb0AwpfjZn3pX8UciajnQFI6z0OR1pmBkt5VSAptL4v0diPwQN
-    ufoLicenseKey: QVZvREpoYi8vLy8vQUFBQUtMckRSZUhsSWtQV2tmRHBJNjQvS3owRHVXRmduQkVsNm16YnprODdBM3Ird25qdEwrcjdlaXdML2hnanRKUUs1bnl2RUdCMk1XKzRKM2dxYkIyVTNjVFk2ampBK3o4ZnNmenpxWVMwSzRhY2JmQzFhTytHWnlIS3haUnI5KzBJZmRweXlyL0QwblhhQU02b1c2SnRCaEtjOS9XTSthNWNIWHROUEQzVDVydkQzSHZwQUFVWExxZ3V0SmxxdjlBSk9NMnRJL0pqUGRiV3BvTjZiRzgxNDRSTGhBRWRwUDMzQU1Nd0FsZjhPLysxY3dSTXJQeFJHWkIyQzg2NjhMbTFFcE1tUUdDZ0tqSFFNR3R3TTFTQ1NKekJBVnl1T2lHTktJUnhjWW80UlhsOXgyVnRmNVcrT2htOGphRnQ3dEJ0NUhUUnlocSt0MGlPN2l6eGhqcWVXZmtZeHJjY2FXVkdRdkVtNGNJam5Rakg=
+    vuforiaLicenseKey: ASg4Qjb/////AAABmeWr29fdZE3bpPAYZ3FA8/8Rd1YATSyy31AgdE6voeuIqATK+KMZuo7qfWyGLvk6ZmOVbPiHP9nmh/TDsPYdJeTzSIocu7A/bBb7YHad65fVhkF1G3AhF02p6bT0nVy8jb89OAzZCmk+CdIbwO7oW5y5EejPJBP3B4J6xkl6dEE56R3intLX37s4BFPxWNcP5mtvuKVspmW9pt3JiVIp1s+stRZ274HIurWzyn5hRb0xn59l+F/k/uVHG6JvbuHkSDoLbx5rdTxvjEbRGSvafLMTgGHHPksT94Qkv/yCvjrMbUnncm6gub5FPc3KJ51LR0Zzj7R7IDsMVBw3TG6KmZQYgMzDMWPiYD52OUV68bzT
+    ufoLicenseKey: QVhKT1R6ci8vLy8vQUFBQUtCZFVOUkRTMkVhTnFleGJTbVZmMGRscS9jOVhWR3VFSzl5UkhDVm9BbEJBWC9kNWtaWVg0RldMekNxdFNuaFY1M2R6b2NjYitua3dRQWlJV1BTaldMOHZTdWdkcCtHeWNiK0M4N1dHYzk1UXc5Nmd6REx0WW5Sd3JKRjBBQ20vYXpFTUJCVzFMTk5vNzl4NW9lMEFRd29CazI4dzhKZ3RMbTNTQmErVEdRaEs2NkpmT29mOWFjSytzVE1WaXltNmEzS1dPN0luRStJc3BrcFhIYXNPZmM1VVFrODE0LzdDMHFiNEVIYVpFM2x0SVVoSU1XV1RvQkFVODhkU0Y3ZStRcEJwekwwcnZWQzUyUStqS2NZRkhKNHlJOXBvbmhBRUVHUWxpeGVsNi8wbmIvYk1KZGJmQVRCMm9PN1o4U20wWk43TEhWVVBZRHpCUmtUUDFVdG80TC85Z1Z5OVlkRVJVZDZwcUttVWUxMGE=
     delayedInitialization: 0
     cameraDeviceModeSetting: -1
     maxSimultaneousImageTargets: 1
@@ -23,8 +23,8 @@ MonoBehaviour:
     useDelayedLoadingObjectTargets: 0
     modelTargetRecoWhileExtendedTracked: 1
     shareRecordingsInITunes: 0
-    version: 9.8.8
-    eulaAcceptedVersions: '{"Values":["0.0","9.8","9.7"]}'
+    version: 9.8.11
+    eulaAcceptedVersions: '{"Values":["","0.0","9.8","9.7","10.2"]}'
   database:
     disableModelExtraction: 0
   shaders:

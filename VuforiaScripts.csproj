@@ -56,14 +56,14 @@
     <Analyzer Include="/Applications/Visual Studio.app/Contents/Resources/lib/monodevelop/AddIns/MonoDevelop.Unity/Analyzers/Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Library/PackageCache/com.ptc.vuforia.engine@2df2f4d646/Vuforia/Scripts/Internal/ARFoundationIntegration/ARFoundationInitializer.cs" />
-    <Compile Include="Library/PackageCache/com.ptc.vuforia.engine@2df2f4d646/Vuforia/Scripts/DefaultInitializationErrorHandler.cs" />
-    <Compile Include="Library/PackageCache/com.ptc.vuforia.engine@2df2f4d646/Vuforia/Scripts/DefaultTrackableEventHandler.cs" />
-    <Compile Include="Library/PackageCache/com.ptc.vuforia.engine@2df2f4d646/Vuforia/Scripts/BoundingBoxRenderer.cs" />
-    <Compile Include="Library/PackageCache/com.ptc.vuforia.engine@2df2f4d646/Vuforia/Scripts/Internal/RuntimeOpenSourceInitializer.cs" />
+    <Compile Include="Library/PackageCache/com.ptc.vuforia.engine@efa13d4486/Vuforia/Scripts/DefaultInitializationErrorHandler.cs" />
+    <Compile Include="Library/PackageCache/com.ptc.vuforia.engine@efa13d4486/Vuforia/Scripts/DefaultTrackableEventHandler.cs" />
+    <Compile Include="Library/PackageCache/com.ptc.vuforia.engine@efa13d4486/Vuforia/Scripts/Internal/ARFoundationIntegration/ARFoundationInitializer.cs" />
+    <Compile Include="Library/PackageCache/com.ptc.vuforia.engine@efa13d4486/Vuforia/Scripts/BoundingBoxRenderer.cs" />
+    <Compile Include="Library/PackageCache/com.ptc.vuforia.engine@efa13d4486/Vuforia/Scripts/Internal/RuntimeOpenSourceInitializer.cs" />
   </ItemGroup>
   <ItemGroup>
-     <None Include="Library/PackageCache/com.ptc.vuforia.engine@2df2f4d646/Vuforia/Scripts/VuforiaScripts.asmdef" />
+     <None Include="Library/PackageCache/com.ptc.vuforia.engine@efa13d4486/Vuforia/Scripts/VuforiaScripts.asmdef" />
     <Reference Include="UnityEngine">
       <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -293,10 +293,10 @@
       <HintPath>/Applications/Visual Studio.app/Contents/Resources/lib/monodevelop/AddIns/MonoDevelop.Unity/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
     <Reference Include="Vuforia.UnityExtensions.Editor">
-      <HintPath>Library/PackageCache/com.ptc.vuforia.engine@2df2f4d646/Vuforia/Plugins/Managed/Editor/Vuforia.UnityExtensions.Editor.dll</HintPath>
+      <HintPath>Library/PackageCache/com.ptc.vuforia.engine@efa13d4486/Vuforia/Plugins/Managed/Editor/Vuforia.UnityExtensions.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Vuforia.UnityExtensions">
-      <HintPath>Library/PackageCache/com.ptc.vuforia.engine@2df2f4d646/Vuforia/Plugins/Managed/Runtime/Vuforia.UnityExtensions.dll</HintPath>
+      <HintPath>Library/PackageCache/com.ptc.vuforia.engine@efa13d4486/Vuforia/Plugins/Managed/Runtime/Vuforia.UnityExtensions.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>/Users/roxyyujin/2020.3.0f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
@@ -651,6 +651,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Unity.XR.ARSubsystems.csproj">
+      <Project>{372016D5-F56C-BC3A-4C47-B8D563409033}</Project>
+      <Name>Unity.XR.ARSubsystems</Name>
+    </ProjectReference>
     <ProjectReference Include="UnityEditor.UI.csproj">
       <Project>{53374EF6-65D8-CF20-479E-22346DCBE200}</Project>
       <Name>UnityEditor.UI</Name>

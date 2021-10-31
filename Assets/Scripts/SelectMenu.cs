@@ -29,14 +29,18 @@ internal class SelectMenu : MonoBehaviour
 
     public void uploadImageClick()
     {
-        var pickImage = new PickUserImage();
-        string pickedImageName = pickImage.PickImage(512);
-        Debug.Log("저장된 이미지 이름 : " + pickedImageName);
+        //var pickImage = new PickUserImage();
+        //string pickedImageName = pickImage.PickImage(512);
+        //Debug.Log("저장된 이미지 이름 : " + pickedImageName);
 
-        // save selected Image Name in to the scene object <ImageName> 
-        GameObject.Find("ImageName").GetComponent<ImageName>().setpickedImageName(pickedImageName);
-        SceneManager.LoadScene("07_AR");
-        DontDestroyOnLoad(GameObject.Find("ImageName"));
+        //// save selected Image Name in to the scene object <ImageName> 
+        //GameObject.Find("ImageName").GetComponent<ImageName>().setpickedImageName(pickedImageName);
+        ////SceneManager.LoadScene("07_AR");
+        //DontDestroyOnLoad(GameObject.Find("ImageName"));
+        //SceneManager.LoadScene("08_ARTest2");
+
+        var pickImage = new PickUserImage();
+        pickImage.PickImage(512);
     }
 
     public void galleryClick()

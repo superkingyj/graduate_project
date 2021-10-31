@@ -48,3 +48,33 @@ C# parse time         : 461ms
 candidates check time : 114ms
 console write time    : 1ms
 
+[api-updater (non-obsolete-error-filter)] 2021-10-11 PM 1:35:26 : Starting /Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 144.176ms
+moved types parse time: 137ms
+candidates parse time : 6ms
+C# parse time         : 738ms
+candidates check time : 227ms
+console write time    : 0ms
+
+[api-updater (non-obsolete-error-filter)] 2021-10-11 PM 1:40:25 : Starting /Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 142.555ms
+moved types parse time: 153ms
+candidates parse time : 5ms
+C# parse time         : 551ms
+candidates check time : 114ms
+console write time    : 2ms
+
+[api-updater (non-obsolete-error-filter)] 2021-10-25 AM 1:23:05 : Starting /Users/roxyyujin/2020.3.0f1/Unity.app/Contents/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 189.544ms
+moved types parse time: 126ms
+candidates parse time : 5ms
+C# parse time         : 442ms
+candidates check time : 90ms
+console write time    : 1ms
+

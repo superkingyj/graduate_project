@@ -56,6 +56,7 @@
     <Analyzer Include="/Applications/Visual Studio.app/Contents/Resources/lib/monodevelop/AddIns/MonoDevelop.Unity/Analyzers/Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets/Plugins/Editor/UnityWebViewPostprocessBuild.cs" />
     <Compile Include="Assets/Plugins/ScreenshotCompanion/Editor/ScreenshotCompanionWindow.cs" />
     <Compile Include="Assets/Plugins/ScreenshotCompanion/Editor/ScreenshotCompanionEditor.cs" />
   </ItemGroup>
@@ -298,10 +299,10 @@
       <HintPath>/Applications/Visual Studio.app/Contents/Resources/lib/monodevelop/AddIns/MonoDevelop.Unity/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
     <Reference Include="Vuforia.UnityExtensions.Editor">
-      <HintPath>Library/PackageCache/com.ptc.vuforia.engine@2df2f4d646/Vuforia/Plugins/Managed/Editor/Vuforia.UnityExtensions.Editor.dll</HintPath>
+      <HintPath>Library/PackageCache/com.ptc.vuforia.engine@efa13d4486/Vuforia/Plugins/Managed/Editor/Vuforia.UnityExtensions.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Vuforia.UnityExtensions">
-      <HintPath>Library/PackageCache/com.ptc.vuforia.engine@2df2f4d646/Vuforia/Plugins/Managed/Runtime/Vuforia.UnityExtensions.dll</HintPath>
+      <HintPath>Library/PackageCache/com.ptc.vuforia.engine@efa13d4486/Vuforia/Plugins/Managed/Runtime/Vuforia.UnityExtensions.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll</HintPath>
@@ -671,6 +672,14 @@
       <Project>{73439528-F906-CA6F-CA69-521C9A1E7A2F}</Project>
       <Name>UnityEditor.TestRunner</Name>
     </ProjectReference>
+    <ProjectReference Include="EnoxSoftware.OpenCVForUnity.Editor.csproj">
+      <Project>{1D136F2F-5CF0-855D-4239-89A9FF7769A5}</Project>
+      <Name>EnoxSoftware.OpenCVForUnity.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.XR.ARKit.csproj">
+      <Project>{719AF117-3FFF-1739-3F03-164E74334BB9}</Project>
+      <Name>Unity.XR.ARKit</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.VSCode.Editor.csproj">
       <Project>{AED87257-C5E6-929F-8A16-318624CDB73A}</Project>
       <Name>Unity.VSCode.Editor</Name>
@@ -678,14 +687,6 @@
     <ProjectReference Include="LeanTouch.csproj">
       <Project>{EE0ACB51-0C32-EBCA-0756-1043FEBCEE62}</Project>
       <Name>LeanTouch</Name>
-    </ProjectReference>
-    <ProjectReference Include="UnityEngine.XR.LegacyInputHelpers.csproj">
-      <Project>{50EC5E29-9BDA-3E64-30A7-62E3DE123DDB}</Project>
-      <Name>UnityEngine.XR.LegacyInputHelpers</Name>
-    </ProjectReference>
-    <ProjectReference Include="NativeGallery.Editor.csproj">
-      <Project>{598E26D6-C42D-BA9F-D95E-744DB61F63A2}</Project>
-      <Name>NativeGallery.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.TextMeshPro.Editor.csproj">
       <Project>{8BB7AF27-27AD-607E-2262-BB584133156C}</Project>
@@ -695,6 +696,10 @@
       <Project>{FAFA7FE4-7C5C-37EA-B182-497012C4F20D}</Project>
       <Name>Unity.VisualStudio.Editor</Name>
     </ProjectReference>
+    <ProjectReference Include="Unity.ProBuilder.AddOns.Editor.csproj">
+      <Project>{D387E799-32A2-4B9D-9E60-65859C761080}</Project>
+      <Name>Unity.ProBuilder.AddOns.Editor</Name>
+    </ProjectReference>
     <ProjectReference Include="VuforiaEditorScripts.csproj">
       <Project>{C5B37251-9ED9-952A-8947-91EE0D35C750}</Project>
       <Name>VuforiaEditorScripts</Name>
@@ -703,10 +708,6 @@
       <Project>{F64C53DB-FE38-81A0-FE7B-201688849147}</Project>
       <Name>Unity.XR.Management.Editor</Name>
     </ProjectReference>
-    <ProjectReference Include="Unity.Timeline.Editor.csproj">
-      <Project>{F49F180E-16D3-EAF7-FD80-A72E0253D709}</Project>
-      <Name>Unity.Timeline.Editor</Name>
-    </ProjectReference>
     <ProjectReference Include="Unity.Timeline.csproj">
       <Project>{4BC5D974-F15B-8813-4712-B200DB4CE358}</Project>
       <Name>Unity.Timeline</Name>
@@ -714,6 +715,66 @@
     <ProjectReference Include="Unity.TextMeshPro.csproj">
       <Project>{26465EE5-4EC4-C81F-C2A3-61DADFAB0BD6}</Project>
       <Name>Unity.TextMeshPro</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.XR.ARKit.Editor.csproj">
+      <Project>{51AE981A-0370-B5DA-B13A-BA6F65D5E82F}</Project>
+      <Name>Unity.XR.ARKit.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.ProBuilder.csproj">
+      <Project>{565E34C5-488E-F124-CFFE-AD351B4C627B}</Project>
+      <Name>Unity.ProBuilder</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Subsystem.Registration.csproj">
+      <Project>{D8076AF4-BE80-CE50-602C-E6B4CA3D7764}</Project>
+      <Name>Unity.Subsystem.Registration</Name>
+    </ProjectReference>
+    <ProjectReference Include="EditorMigrationScripts.csproj">
+      <Project>{001447E9-A5E8-B225-6D5B-E56ED5A6C321}</Project>
+      <Name>EditorMigrationScripts</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.ProBuilder.Editor.csproj">
+      <Project>{2D456C90-A5ED-4982-7157-21CA479FF8AD}</Project>
+      <Name>Unity.ProBuilder.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEditor.UI.csproj">
+      <Project>{53374EF6-65D8-CF20-479E-22346DCBE200}</Project>
+      <Name>UnityEditor.UI</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Rider.Editor.csproj">
+      <Project>{107449CA-1AD9-FD41-5F55-AAAA6F1EF2DB}</Project>
+      <Name>Unity.Rider.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEngine.UI.csproj">
+      <Project>{0898274C-9C99-648F-BA3F-203C00B1C40D}</Project>
+      <Name>UnityEngine.UI</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEngine.SpatialTracking.csproj">
+      <Project>{B17491CC-5A44-0643-F961-212CBFADF2B0}</Project>
+      <Name>UnityEngine.SpatialTracking</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.ProBuilder.AssetIdRemapUtility.csproj">
+      <Project>{F87BCF0D-AE09-E1D4-0DBA-597449678E5D}</Project>
+      <Name>Unity.ProBuilder.AssetIdRemapUtility</Name>
+    </ProjectReference>
+    <ProjectReference Include="EnoxSoftware.OpenCVForUnity.csproj">
+      <Project>{D907E3B8-DB86-1512-0D50-0BDB0B6DCDE5}</Project>
+      <Name>EnoxSoftware.OpenCVForUnity</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEngine.XR.LegacyInputHelpers.csproj">
+      <Project>{50EC5E29-9BDA-3E64-30A7-62E3DE123DDB}</Project>
+      <Name>UnityEngine.XR.LegacyInputHelpers</Name>
+    </ProjectReference>
+    <ProjectReference Include="NativeGallery.Editor.csproj">
+      <Project>{598E26D6-C42D-BA9F-D95E-744DB61F63A2}</Project>
+      <Name>NativeGallery.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Timeline.Editor.csproj">
+      <Project>{F49F180E-16D3-EAF7-FD80-A72E0253D709}</Project>
+      <Name>Unity.Timeline.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.XR.ARSubsystems.Editor.csproj">
+      <Project>{C5DFB897-D420-DB6B-95CD-515D162F13E3}</Project>
+      <Name>Unity.XR.ARSubsystems.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEditor.XR.LegacyInputHelpers.csproj">
       <Project>{8C7D8A66-7810-D154-1F24-ECFA6561533E}</Project>
@@ -727,37 +788,17 @@
       <Project>{4A8A6CC4-962F-9C75-E7F3-2D512BF6F73A}</Project>
       <Name>NativeGallery.Runtime</Name>
     </ProjectReference>
+    <ProjectReference Include="Unity.XR.ARSubsystems.csproj">
+      <Project>{372016D5-F56C-BC3A-4C47-B8D563409033}</Project>
+      <Name>Unity.XR.ARSubsystems</Name>
+    </ProjectReference>
     <ProjectReference Include="LeanCommon.csproj">
       <Project>{CB57D0F1-2208-BE3C-939A-0708DF46746D}</Project>
       <Name>LeanCommon</Name>
     </ProjectReference>
-    <ProjectReference Include="Unity.Subsystem.Registration.csproj">
-      <Project>{D8076AF4-BE80-CE50-602C-E6B4CA3D7764}</Project>
-      <Name>Unity.Subsystem.Registration</Name>
-    </ProjectReference>
-    <ProjectReference Include="EditorMigrationScripts.csproj">
-      <Project>{001447E9-A5E8-B225-6D5B-E56ED5A6C321}</Project>
-      <Name>EditorMigrationScripts</Name>
-    </ProjectReference>
-    <ProjectReference Include="UnityEditor.UI.csproj">
-      <Project>{53374EF6-65D8-CF20-479E-22346DCBE200}</Project>
-      <Name>UnityEditor.UI</Name>
-    </ProjectReference>
     <ProjectReference Include="UnityEditor.SpatialTracking.csproj">
       <Project>{FBDC0665-EEFE-3940-93A9-BFD61EF6F863}</Project>
       <Name>UnityEditor.SpatialTracking</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.Rider.Editor.csproj">
-      <Project>{107449CA-1AD9-FD41-5F55-AAAA6F1EF2DB}</Project>
-      <Name>Unity.Rider.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="UnityEngine.UI.csproj">
-      <Project>{0898274C-9C99-648F-BA3F-203C00B1C40D}</Project>
-      <Name>UnityEngine.UI</Name>
-    </ProjectReference>
-    <ProjectReference Include="UnityEngine.SpatialTracking.csproj">
-      <Project>{B17491CC-5A44-0643-F961-212CBFADF2B0}</Project>
-      <Name>UnityEngine.SpatialTracking</Name>
     </ProjectReference>
     <ProjectReference Include="VuforiaScripts.csproj">
       <Project>{B4B4DAA4-5821-0804-587F-401261A3FDBF}</Project>

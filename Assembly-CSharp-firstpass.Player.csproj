@@ -56,9 +56,10 @@
     <Analyzer Include="/Applications/Visual Studio.app/Contents/Resources/lib/monodevelop/AddIns/MonoDevelop.Unity/Analyzers/Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets/Plugins/WebViewObject.cs" />
+    <Compile Include="Assets/Plugins/ScreenshotCompanion/Framework/SettingsObject.cs" />
     <Compile Include="Assets/Plugins/ScreenshotCompanion/ScreenshotCompanion.cs" />
     <Compile Include="Assets/Plugins/ScreenshotCompanion/Framework/CameraObject.cs" />
-    <Compile Include="Assets/Plugins/ScreenshotCompanion/Framework/SettingsObject.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -247,11 +248,11 @@
     <Reference Include="UnityEngine.XRModule">
       <HintPath>/Users/roxyyujin/2020.3.0f1/PlaybackEngines/iOSSupport/Variations/il2cpp/Managed/UnityEngine.XRModule.dll</HintPath>
     </Reference>
+    <Reference Include="EnoxSoftware.OpenCVForUnity.Editor">
+      <HintPath>Library/ScriptAssemblies/EnoxSoftware.OpenCVForUnity.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.VSCode.Editor">
       <HintPath>Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="NativeGallery.Editor">
-      <HintPath>Library/ScriptAssemblies/NativeGallery.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
@@ -259,32 +260,50 @@
     <Reference Include="Unity.VisualStudio.Editor">
       <HintPath>Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.ProBuilder.AddOns.Editor">
+      <HintPath>Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="VuforiaEditorScripts">
       <HintPath>Library/ScriptAssemblies/VuforiaEditorScripts.dll</HintPath>
     </Reference>
     <Reference Include="Unity.XR.Management.Editor">
       <HintPath>Library/ScriptAssemblies/Unity.XR.Management.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Timeline.Editor">
-      <HintPath>Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.XR.LegacyInputHelpers">
-      <HintPath>Library/ScriptAssemblies/UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
+    <Reference Include="Unity.XR.ARKit.Editor">
+      <HintPath>Library/ScriptAssemblies/Unity.XR.ARKit.Editor.dll</HintPath>
     </Reference>
     <Reference Include="EditorMigrationScripts">
       <HintPath>Library/ScriptAssemblies/EditorMigrationScripts.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.ProBuilder.Editor">
+      <HintPath>Library/ScriptAssemblies/Unity.ProBuilder.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.SpatialTracking">
-      <HintPath>Library/ScriptAssemblies/UnityEditor.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
       <HintPath>Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.ProBuilder.AssetIdRemapUtility">
+      <HintPath>Library/ScriptAssemblies/Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
+    </Reference>
+    <Reference Include="NativeGallery.Editor">
+      <HintPath>Library/ScriptAssemblies/NativeGallery.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Timeline.Editor">
+      <HintPath>Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.XR.ARSubsystems.Editor">
+      <HintPath>Library/ScriptAssemblies/Unity.XR.ARSubsystems.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.XR.LegacyInputHelpers">
+      <HintPath>Library/ScriptAssemblies/UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.SpatialTracking">
+      <HintPath>Library/ScriptAssemblies/UnityEditor.SpatialTracking.dll</HintPath>
+    </Reference>
     <Reference Include="Vuforia.UnityExtensions">
-      <HintPath>Library/PackageCache/com.ptc.vuforia.engine@2df2f4d646/Vuforia/Plugins/Managed/iOS/Vuforia.UnityExtensions.dll</HintPath>
+      <HintPath>Library/PackageCache/com.ptc.vuforia.engine@efa13d4486/Vuforia/Plugins/Managed/iOS/Vuforia.UnityExtensions.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>/Users/roxyyujin/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
@@ -633,13 +652,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Unity.XR.ARKit.csproj">
+      <Project>{719AF117-3FFF-1739-3F03-164E74334BB9}</Project>
+      <Name>Unity.XR.ARKit</Name>
+    </ProjectReference>
     <ProjectReference Include="LeanTouch.csproj">
       <Project>{EE0ACB51-0C32-EBCA-0756-1043FEBCEE62}</Project>
       <Name>LeanTouch</Name>
-    </ProjectReference>
-    <ProjectReference Include="UnityEngine.XR.LegacyInputHelpers.csproj">
-      <Project>{50EC5E29-9BDA-3E64-30A7-62E3DE123DDB}</Project>
-      <Name>UnityEngine.XR.LegacyInputHelpers</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Timeline.csproj">
       <Project>{4BC5D974-F15B-8813-4712-B200DB4CE358}</Project>
@@ -649,17 +668,9 @@
       <Project>{26465EE5-4EC4-C81F-C2A3-61DADFAB0BD6}</Project>
       <Name>Unity.TextMeshPro</Name>
     </ProjectReference>
-    <ProjectReference Include="Unity.XR.Management.csproj">
-      <Project>{50042142-EF92-139A-1575-3C0F073E03C3}</Project>
-      <Name>Unity.XR.Management</Name>
-    </ProjectReference>
-    <ProjectReference Include="NativeGallery.Runtime.csproj">
-      <Project>{4A8A6CC4-962F-9C75-E7F3-2D512BF6F73A}</Project>
-      <Name>NativeGallery.Runtime</Name>
-    </ProjectReference>
-    <ProjectReference Include="LeanCommon.csproj">
-      <Project>{CB57D0F1-2208-BE3C-939A-0708DF46746D}</Project>
-      <Name>LeanCommon</Name>
+    <ProjectReference Include="Unity.ProBuilder.csproj">
+      <Project>{565E34C5-488E-F124-CFFE-AD351B4C627B}</Project>
+      <Name>Unity.ProBuilder</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Subsystem.Registration.csproj">
       <Project>{D8076AF4-BE80-CE50-602C-E6B4CA3D7764}</Project>
@@ -672,6 +683,30 @@
     <ProjectReference Include="UnityEngine.SpatialTracking.csproj">
       <Project>{B17491CC-5A44-0643-F961-212CBFADF2B0}</Project>
       <Name>UnityEngine.SpatialTracking</Name>
+    </ProjectReference>
+    <ProjectReference Include="EnoxSoftware.OpenCVForUnity.csproj">
+      <Project>{D907E3B8-DB86-1512-0D50-0BDB0B6DCDE5}</Project>
+      <Name>EnoxSoftware.OpenCVForUnity</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEngine.XR.LegacyInputHelpers.csproj">
+      <Project>{50EC5E29-9BDA-3E64-30A7-62E3DE123DDB}</Project>
+      <Name>UnityEngine.XR.LegacyInputHelpers</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.XR.Management.csproj">
+      <Project>{50042142-EF92-139A-1575-3C0F073E03C3}</Project>
+      <Name>Unity.XR.Management</Name>
+    </ProjectReference>
+    <ProjectReference Include="NativeGallery.Runtime.csproj">
+      <Project>{4A8A6CC4-962F-9C75-E7F3-2D512BF6F73A}</Project>
+      <Name>NativeGallery.Runtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.XR.ARSubsystems.csproj">
+      <Project>{372016D5-F56C-BC3A-4C47-B8D563409033}</Project>
+      <Name>Unity.XR.ARSubsystems</Name>
+    </ProjectReference>
+    <ProjectReference Include="LeanCommon.csproj">
+      <Project>{CB57D0F1-2208-BE3C-939A-0708DF46746D}</Project>
+      <Name>LeanCommon</Name>
     </ProjectReference>
     <ProjectReference Include="VuforiaScripts.csproj">
       <Project>{B4B4DAA4-5821-0804-587F-401261A3FDBF}</Project>
