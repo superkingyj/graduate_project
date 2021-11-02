@@ -1,5 +1,5 @@
 # TickiTattoo
-![512](https://user-images.githubusercontent.com/43868490/139915397-868d0743-72cb-413d-9edd-32000170105b.png)
+![196](https://user-images.githubusercontent.com/43868490/139915595-63c75c3c-0169-4ce2-9f11-98de9ae5d1fd.png)   
 2021 1학기 ~ 2학기 AR Tattoo Simulation 어플리케이션 <TickiTattoo>
 (Library 파일 제외)
 
